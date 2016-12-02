@@ -144,6 +144,7 @@ class HarvestSupplierProfile:
     return news
       
   def getAnnouncements(self,html):
+    #TODO
     soup=bs(html,'html.parser')
     announce=[]
     for ann in soup.findAll('div',attrs={'class','area-listing-item'}):
