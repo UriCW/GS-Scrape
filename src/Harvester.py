@@ -40,6 +40,9 @@ class HarvestDirectoryOfSuppliers:
           continue
         self.harvestSuppliersFromPage(html)
 
+  def dump(self):
+    for ent in self.SoupLiars:
+      print(ent)
 
 
 
@@ -79,24 +82,103 @@ class HarvestIndustrialDirectory:
           continue
         self.harvestProductsFromPage(html)
 
-
-
-""" This is my equivelent to TDD :P """
-def test_get_page(letter,page):
-  """
-  This gets a page from the tmp directory, instead of the site,
-  It's here to test, The proper one should use urllib or something similar and be in
-  HarvestDirectoryOfSuppliers.getPage(letter,page)
+class HarvestSupplierProfile:
+  def __init__(self):
+    pass
   
-  Returns a page listing html like at http://BASE_URL/A/1, or None if past last page
-  """
-  fname="./tmp/AllSuppliers."+letter+"."+str(page)+".html"
-  try:
-    txt=open(fname).read()
-    return txt
-  except:
-    return None
+  Profile={}
 
+  def getHTML(self,supplier_name,category):
+    """
+    Gets the HTML page for the supplier and category, currently look in ./tmp/suppliers for data
+    @TODO get this from URL
+    """
+    ret=open("./tmp/suppliers/supplier."+category+"."+supplier_name+".html").read()
+    return ret
+  def getAbout(self,html):
+    soup=bs(html,'html.parser')
+    content=soup.find("div",attrs={'id':'main-content'})
+
+    title=content.find("div",attrs={'class':'page-title-container'}).find("h1").getText()
+    profile_text=content.find("div",attrs={'id':'sp-profile-text'})
+    about_video=content.find("div",attrs={'class':'sup-about-video'}).find('iframe')['src']
+    about={
+      'title':title,
+      'text':profile_text,
+      'video':about_video
+    }
+    return about
+  def getCatalog(self,html):
+    soup=bs(html,'html.parser')
+    content=soup.find("div",attrs={'id':'catalog-area-list'})
+    catalog=[]
+    for div in content.findAll('div',attrs={'class','catalog-area'}):
+      url=div.find('a')['href']
+      img=div.find('img')['src']
+      title=div.find('div',attrs={'class':'area-text'}).find('a').getText().strip()
+      subtext=div.find('div',attrs={'class':'subtext'}).getText().strip()
+      product={
+        'url':url,
+        'img':img,
+        'title':title,
+        'subtext':subtext
+      }
+      catalog.append(product);
+    return catalog
+  def getNews(self,html):
+    soup=bs(html,'html.parser')
+    content=soup.find("div",attrs={'class':'area-listing'})
+    news=[]
+    for item in content.findAll('div',attrs={'class','area-listing-item'}):
+      date=item.find('div',attrs={'class':'left'}).getText().strip()
+      title=item.find("a",attrs={'class':'item-title'}).getText().strip()
+      url=item.find("a",attrs={'class':'item-title'})['href']
+      desc=item.find("p").getText().strip()
+      news_item={
+        'title':title,
+        'date':date,
+        'link':url,
+        'desc':desc
+      }
+      news.append(news_item)
+    return news
+      
+  def getAnnouncements(self,html):
+    soup=bs(html,'html.parser')
+    announce=[]
+    for ann in soup.findAll('div',attrs={'class','area-listing-item'}):
+      print(ann)
+      print()
+      img=ann.find('div',attrs={'class':'pa-img-wrapper'}).find('img')['src']
+      url=ann.find('div',attrs={'class':'pa-img-wrapper'}).find('a')['href']
+      #title=ann.find('div',attrs={'class':'item-title-container'})
+      #title=ann.find('div')
+      #print(title)
+  
+      #title=ann.find('div',attrs={'class':'item-info'}).find('a').getText().strip()
+      #desc=ann.find('div',attrs={'class':'short-desc'}).find('p').getText().strip()
+      #print(img+";"+url)
+
+
+
+  def harvest(self,supplier_name):
+    categories=['about','catalog','news','productannouncements','techarticles','videos']
+    for category in categories:
+      html=self.getHTML(supplier_name,category)
+      if category =="about":
+        about=self.getAbout(html)
+        self.Profile['about']=about
+      if category =="catalog":
+        catalog=self.getCatalog(html)
+        self.Profile['catalog']=catalog
+      if category =="news":
+        news=self.getNews(html)
+        self.Profile['news']=news
+      if category =="productannouncements":
+        announce=self.getAnnouncements(html)
+
+  def dump(self):
+    print(self.Profile)
 
 if __name__=='__main__':
   DoS=HarvestDirectoryOfSuppliers()
@@ -104,9 +186,7 @@ if __name__=='__main__':
 
   IndDir=HarvestIndustrialDirectory()
   IndDir.harvest()
-  for prod in IndDir.ProdActs:
-    print(prod)
-#  for s in DoS.SoupLiars:
-#    print(s)
-  #txt=open("./tmp/AllSuppliers.1.html").read()
-  #DoS.harvestSuppliersFromPage(txt)
+
+  SP = HarvestSupplierProfile()
+  SP.harvest("ABBElectrificationProducts")
+  #SP.dump()
