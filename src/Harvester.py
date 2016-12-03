@@ -83,10 +83,22 @@ class HarvestIndustrialDirectory:
         self.harvestProductsFromPage(html)
 
 class HarvestSupplierProfile:
+  """
+  Harvest data for a single Supplier profile.
+  Stores result of harvest in 
+  ProFile = {
+    'about': ...
+    'catalog': ...
+    'news': ...
+    'announcements': ...
+    'articles': ...
+    'videos': ...
+  }
+  """
   def __init__(self):
     pass
   
-  Profile={}
+  ProFile={}
 
   def getHTML(self,supplier_name,category):
     """
@@ -178,19 +190,19 @@ class HarvestSupplierProfile:
       html=self.getHTML(supplier_name,category)
       if category =="about":
         about=self.getAbout(html)
-        self.Profile['about']=about
+        self.ProFile['about']=about
       if category =="catalog":
         catalog=self.getCatalog(html)
-        self.Profile['catalog']=catalog
+        self.ProFile['catalog']=catalog
       if category =="news":
         news=self.getNews(html)
-        self.Profile['news']=news
+        self.ProFile['news']=news
       if category =="productannouncements":
         announce=self.getAnnouncements(html)
-        self.Profile['announcements']=announce
+        self.ProFile['announcements']=announce
 
   def dump(self):
-    print(self.Profile)
+    print(self.ProFile)
 
 if __name__=='__main__':
   DoS=HarvestDirectoryOfSuppliers()
