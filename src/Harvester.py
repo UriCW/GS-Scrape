@@ -95,10 +95,10 @@ class HarvestSupplierProfile:
     'videos': ...
   }
   """
+  ProFile={}
   def __init__(self):
     pass
   
-  ProFile={}
 
   def getHTML(self,supplier_name,category):
     """
@@ -182,6 +182,39 @@ class HarvestSupplierProfile:
         item['url']=urls[i]
         announcements.append(item)
     return(announcements)
+
+  def getArticles(self,html):
+      """
+      Gets a list of article headers from an html string
+      returns
+          Articles=[
+              {
+                  "title":""
+                  "description":""
+                  "subtext":""
+                  "url":""
+              },
+              {},...
+          ]
+      """
+      Articles=[]
+      soup=bs(html,'html.parser')
+      content=soup.find("div",attrs={'class':'area-listing'})
+      items=content.findAll("div",attrs={'class':'area-listing-item'})
+      for item in items:
+          title=item.find('a',attrs={'class':'item-title'}).getText().strip()
+          url=item.find('a',attrs={'class':'item-title'})['href']
+          subtext=item.find("b").getText().strip() 
+          desc=item.find("div",attrs={'class':'last'}).find("div").getText().strip()#TODO cleanup
+          Articles.append(
+              {
+                  'title':title,
+                  'url':url,
+                  'subtext':subtext,
+                  'description':desc
+              }
+          )
+      return Articles
 
 
   def harvest(self,supplier_name):
