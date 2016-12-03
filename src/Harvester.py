@@ -144,22 +144,32 @@ class HarvestSupplierProfile:
     return news
       
   def getAnnouncements(self,html):
-    #TODO
-    soup=bs(html,'html.parser')
-    announce=[]
-    for ann in soup.findAll('div',attrs={'class','area-listing-item'}):
-      print(ann)
-      print()
-      img=ann.find('div',attrs={'class':'pa-img-wrapper'}).find('img')['src']
-      url=ann.find('div',attrs={'class':'pa-img-wrapper'}).find('a')['href']
-      #title=ann.find('div',attrs={'class':'item-title-container'})
-      #title=ann.find('div')
-      #print(title)
-  
-      #title=ann.find('div',attrs={'class':'item-info'}).find('a').getText().strip()
-      #desc=ann.find('div',attrs={'class':'short-desc'}).find('p').getText().strip()
-      #print(img+";"+url)
-
+    soup = bs(html,"html.parser")
+    #There is an extra </div> which breaks everything.
+    #Iterate 4 times instead and then join arrays (and hope they are in the same order)
+    titles=[]
+    descriptions=[]
+    images=[]
+    urls=[]
+    for title in soup.findAll("div",attrs={"class","item-title-container"}):
+        titles.append(title.getText().strip() )
+        link=title.find("a")['href']
+        urls.append(link)
+    for desc in soup.findAll("span",attrs={"class","short-desc"}):
+        descriptions.append(desc.getText().strip() )
+    for img in soup.findAll("div",attrs={"class":"pa-img-wrapper"}):
+        src=img.find("img")['src']
+        images.append(src)
+    #Now put in dictionary
+    announcements=[]
+    for i in range(0,len(titles)):
+        item={}
+        item['title']=titles[i]
+        item['description']=descriptions[i]
+        item['img']=images[i]
+        item['url']=urls[i]
+        announcements.append(item)
+    return(announcements)
 
 
   def harvest(self,supplier_name):
@@ -177,6 +187,7 @@ class HarvestSupplierProfile:
         self.Profile['news']=news
       if category =="productannouncements":
         announce=self.getAnnouncements(html)
+        self.Profile['announcements']=announce
 
   def dump(self):
     print(self.Profile)
