@@ -1,4 +1,4 @@
-
+from bs4 import BeautifulSoup as bs
 class HarvestSupplierProfile:
   """
   Harvest data for a single Supplier profile.
@@ -13,8 +13,8 @@ class HarvestSupplierProfile:
   }
   """
   ProFile={}
-  def __init__(self):
-    pass
+#  def __init__(self):
+#    pass
   
 
   def getHTML(self,supplier_name,category):

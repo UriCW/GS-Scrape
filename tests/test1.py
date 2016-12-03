@@ -1,8 +1,12 @@
 import sys
 from bs4 import BeautifulSoup as bs
-from ..src.Harvester import *
+#from ..src import *
+#from ..src import HarvestSupplierProfile
+#from .src import ContentHarvesters
+from ..src.ContentHarvesters import *
 def prt(txt):
     sys.stdout.write(str(txt)+"\n")
+
 
 def get_html_string(fname):
     return open(fname).read()

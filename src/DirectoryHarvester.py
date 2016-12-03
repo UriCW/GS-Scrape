@@ -1,7 +1,9 @@
 from bs4 import BeautifulSoup as bs
-from . import HarvestSupplierProfile
+#from . import HarvestSupplierProfile
+import HarvestSupplierProfile
 class HarvestDirectoryOfSuppliers:
   BASE_URL="http://www.globalspec.com/SpecSearch/SuppliersByName/AllSuppliers/"
+
   SoupLiars=[]
   def __init__(self):
     pass
@@ -14,32 +16,31 @@ class HarvestDirectoryOfSuppliers:
     }
     return ret
 
-    def harvestSuppliersFromPage(self,html):
-       soup = bs(html,'html.parser')
-       suppliers=soup.findAll("tr",attrs={"class":"result-item"})
-       if suppliers is None: return None #This is past the last page
-       for s in suppliers:
-         a=s.find("a")
-         link=a['href']
-         name=a.getText()
-         entry=self.genEntry(name.strip(),link.strip())
-         self.SoupLiars.append(entry)
-
-    def getPage(self,letter,page):
-           #TODO
-           #Gets a page html text using the format self.BASE_URL+"/"+letter+"/"+page
-           #Returns None if past last page
-           return None
-
-    def harvest(self):
-      letters=[chr(l) for l in range(ord('A'),ord('Z')+1) ]
-      letters.append("1");
-      for letter in letters:
-        for page in range(1,101):
-          html=self.getPage(letter,page)
-          if html is None: 
-            continue
-          self.harvestSuppliersFromPage(html)
+  def harvestSuppliersFromPage(self,html):
+    soup = bs(html,'html.parser')
+    suppliers=soup.findAll("tr",attrs={"class":"result-item"})
+    if suppliers is None: return None #This is past the last page
+    for s in suppliers:
+      a=s.find("a")
+      link=a['href']
+      name=a.getText()
+      entry=self.genEntry(name.strip(),link.strip())
+      self.SoupLiars.append(entry)
+      
+  def getPage(self,letter,page):
+    #TODO
+    #Gets a page html text using the format self.BASE_URL+"/"+letter+"/"+page
+    #Returns None if past last page
+    return None
+  def harvest(self):
+    letters=[chr(l) for l in range(ord('A'),ord('Z')+1) ]
+    letters.append("1");
+    for letter in letters:
+      for page in range(1,101):
+        html=self.getPage(letter,page)
+        if html is None: 
+          continue
+        self.harvestSuppliersFromPage(html)
 
     def dump(self):
       for ent in self.SoupLiars:
@@ -84,13 +85,13 @@ class HarvestIndustrialDirectory:
         self.harvestProductsFromPage(html)
 
 
-if __name__=='__main__':
-  DoS=HarvestDirectoryOfSuppliers()
-  DoS.harvest()
+#if __name__=='__main__':
+#  DoS=HarvestDirectoryOfSuppliers()
+#  DoS.harvest()
 
-  IndDir=HarvestIndustrialDirectory()
-  IndDir.harvest()
+#  IndDir=HarvestIndustrialDirectory()
+#  IndDir.harvest()
 
-  SP = HarvestSupplierProfile()
-  SP.harvest("ABBElectrificationProducts")
+  #SP = HarvestSupplierProfile()
+  #SP.harvest("ABBElectrificationProducts")
   #SP.dump()
