@@ -1,1 +1,5 @@
-{}
+{
+  "tests/test1.py::test_announcements": true,
+  "tests/test1.py::test_articles": true,
+  "tests/test1.py::test_videos": true
+}
