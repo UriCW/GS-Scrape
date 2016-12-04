@@ -60,3 +60,44 @@ def test_industrial_category():
     assert cats[5]['title']=="Acoustic Enclosures - ClearSonic IsoPac (Isolation Packages) -- ISOPAC A"
     assert cats[5]['url']=="http://www.globalspec.com/specsearch/partspecs?partId={1805EFD7-3569-42A5-A8B3-BA9AAD687A6B}&vid=123534&comp=4007"
     assert cats[5]['product_page']=="http://www.globalspec.com/specsearch/partspecs?partId={1805EFD7-3569-42A5-A8B3-BA9AAD687A6B}&vid=123534&comp=4007"
+
+
+class HarvestProduct:
+    """
+    A Content harvester for a single product page
+    e.g. /specsearch/partspecs?partId={D83387DD-BB71-4963-8654-3EBB35598EAF}&vid=129159&comp=2940&sqid=19029003
+
+    ProDuck = {
+        'breadcrumb' : '' #
+        'title'      : '' #
+        'content'    : '' #html of the main content in <div id="inner-content>"
+        'supplier_product_page  :   '' #the "Get More Info on Supplier's Site" href
+        'datasheet'  : '' 
+        'product_image'  : '' #url of image
+        'videos'     :  [] #For later extraction from 'content'
+        'images'     :  [] #For later extraction from 'content'
+        'pdfs'       :  [] #For later extraction from 'content'
+        'files'       : [] #Everything else, for later extraction from 'content'
+    }
+    """
+    ProDuck={}
+
+    def get(self,html):
+        soup = bs(html,"html.parser")
+        breadcrumb=soup.find("div",attrs={"id":"breadcrumb"})
+        
+        return(
+            {
+                "breadcrumb":breadcrumb
+            }
+        )
+
+
+
+
+def test_product():
+    html=get_html_string("./tmp/products/838 Datasheet.html")
+    prod = HarvestProduct().get(html)
+    prt(prod)
+    assert "POLYKEN ALL WEATHER PERMANENT PE FILM TAPE -- 838" in prod['breadcrumb'].getText()
+
