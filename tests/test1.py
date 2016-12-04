@@ -42,3 +42,70 @@ def test_videos():
     assert videos[0]['url']=="https://www.youtube.com/embed/850aO98OAyI"
 
 
+class HarvestIndustrialCategory:
+    """
+    harvest directory shown for items in industrial directory
+    e.g /industrial-directory/audio_amplifier_schematic, /industrial-directory/Acrylic_Wrap
+    Note, this comes is several (at least two) formats for different categories (the above are different formats for example)
+    
+    The urls in this directory come like this:
+    /search/processGlobalSearch?comp=4352
+    /search/processGlobalSearch?comp=2940
+    Search?comp=N looks like it's just a redirect to:
+    /search/products?page=ms#comp=2940&show=suppliers&sqid=19024082
+    i am guessing that sqid is some sql transaction id and is irrelevant for the purpose of scrapping
+    it works without, ie
+    /search/products?page=ms#comp=2940&show=products
+    
+    returns
+        CatEgories=[
+            {
+                'title':''
+                'id'   :''
+            }
+        ]
+        where title is the title text and id is the component id (?comp=N)
+    """
+    CatEgories=[]
+
+    def getFromFormatA(self,content):
+        """
+        e.g /industrial-directory/audio_amplifier_schematic
+        I Hate this!
+        """
+        cats=[]
+        for i,link in enumerate( content.findAll("a",attrs={'class':'search-result-title'}) ):
+            title=link.getText().strip()
+            title=' '.join(title.split())
+            url=link["href"]
+            id=url.split("?comp=")[-1]
+            prt( id+" : "+title+":"+url)
+            #prt( str(link.prettify() ) )
+            cats.append(
+                {
+                    'id':id,
+                    'title':title
+                }
+            )
+        return cats
+        
+
+    def get(self,html):
+        soup=bs(html,'html.parser')
+        cats=[]
+        content=soup.find("div",attrs={"id":"products"})
+        if content is not None:
+            cats = self.getFromFormatA(content)
+        return cats 
+
+def test_industrial_category():
+    html=get_html_string("./tmp/industrial_directory/audio_amplifier_schematic.html")
+    categories=HarvestIndustrialCategory()
+    cats = categories.get(html)
+    assert cats[0]['id']==str(2940)
+    assert cats[0]['title']=="Audio Amplifiers and Preamplifiers"
+    
+    
+    html=get_html_string("./tmp/industrial_directory/Acrylic_Wrap.html")
+    categories=HarvestIndustrialCategory()
+    cats = categories.get(html)

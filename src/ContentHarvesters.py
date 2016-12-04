@@ -13,7 +13,7 @@ class HarvestSupplierProfile:
     }
     """
     ProFile={}
-
+    
     def getHTML(self,supplier_name,category):
       """
       Gets the HTML page for the supplier and category, currently look in ./tmp/suppliers for data
@@ -187,3 +187,5 @@ class HarvestSupplierProfile:
             self.ProFile['announcements']=announce
           #TODO add remaining categoried here!
 
+class HarvestProduct:
+    pass
