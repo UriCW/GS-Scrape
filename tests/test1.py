@@ -1,8 +1,5 @@
 import sys
 from bs4 import BeautifulSoup as bs
-#from ..src import *
-#from ..src import HarvestSupplierProfile
-#from .src import ContentHarvesters
 from ..src.ContentHarvesters import *
 def prt(txt):
     sys.stdout.write(str(txt)+"\n")
@@ -57,14 +54,21 @@ class HarvestIndustrialCategory:
     it works without, ie
     /search/products?page=ms#comp=2940&show=products
     
+    also:
+    sometimes link is directly to product! this breaks everything!
+
     returns
         CatEgories=[
             {
                 'title':''
-                'id'   :''
-            }
+                'cat_id'   :''
+                'url'  :''
+                'product' : None
+            },
         ]
         where title is the title text and id is the component id (?comp=N)
+        put in product url too if you can,
+        will have to handle this in the next step!
     """
     CatEgories=[]
 
@@ -79,11 +83,37 @@ class HarvestIndustrialCategory:
             title=' '.join(title.split())
             url=link["href"]
             id=url.split("?comp=")[-1]
-            prt( id+" : "+title+":"+url)
+            #prt( id+" : "+title+":"+url)
             #prt( str(link.prettify() ) )
             cats.append(
                 {
                     'id':id,
+                    'title':title,
+                    'url':url,
+                    'product':None
+                }
+            )
+        return cats
+    def getFromFormatB(self,content):
+        """
+        e.g. /industrial-directory/Acrylic_Wrap
+        I Hate this more!   
+        """
+        cats=[]
+        for item in content.findAll("li",attrs={'class':'part-summary'}):
+            title=item.find("div",attrs={"class":"part-name"}).getText().strip()
+            title=' '.join(title.split())
+            url=item.find("div",attrs={"class":"part-name"}).find("a")["href"]
+            prt( title+";"+str(url) )
+            #url=item["href"]
+            #id=url.split("?comp=")[-1]
+            #prt( id+" : "+title+":"+url)
+            #prt( str(link.prettify() ) )
+            cats.append(
+                {
+                    'id':id,
+                    'title':title,
+                    'url':url,
                     'title':title
                 }
             )
@@ -96,6 +126,11 @@ class HarvestIndustrialCategory:
         content=soup.find("div",attrs={"id":"products"})
         if content is not None:
             cats = self.getFromFormatA(content)
+            return cats 
+        
+        content=soup.find("div",attrs={"class":"simple-section-wrapper"})
+        if content is not None:
+            cats=self.getFromFormatB(content)
         return cats 
 
 def test_industrial_category():
@@ -104,8 +139,9 @@ def test_industrial_category():
     cats = categories.get(html)
     assert cats[0]['id']==str(2940)
     assert cats[0]['title']=="Audio Amplifiers and Preamplifiers"
-    
+    cats=None
     
     html=get_html_string("./tmp/industrial_directory/Acrylic_Wrap.html")
     categories=HarvestIndustrialCategory()
     cats = categories.get(html)
+    assert len(cats) > 0
