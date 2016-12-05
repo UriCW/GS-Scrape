@@ -62,51 +62,6 @@ def test_industrial_category():
     assert cats[5]['product_page']=="http://www.globalspec.com/specsearch/partspecs?partId={1805EFD7-3569-42A5-A8B3-BA9AAD687A6B}&vid=123534&comp=4007"
 
 
-class HarvestProduct:
-    """
-    A Content harvester for a single product page
-    e.g. /specsearch/partspecs?partId={D83387DD-BB71-4963-8654-3EBB35598EAF}&vid=129159&comp=2940&sqid=19029003
-
-    ProDuck = {
-        'breadcrumb' : '' #
-        'title'      : '' #
-        'content'    : '' #html of the main content in <div id="inner-content>"
-        'external'   :   '' #the "Get More Info on Supplier's Site" href
-        'datasheet'  : '' 
-        'product_image'  : '' #url of image
-        'videos'     :  [] #For later extraction from 'content'
-        'images'     :  [] #For later extraction from 'content'
-        'pdfs'       :  [] #For later extraction from 'content'
-        'files'       : [] #Everything else, for later extraction from 'content'
-    }
-    """
-    ProDuck={}
-
-    def get(self,html):
-        soup = bs(html,"html.parser")
-        breadcrumb=soup.find( "div",attrs={"id":"breadcrumb"} )
-        title = soup.find("div",attrs={"id":"header-container"}).find("h1").getText().strip()
-        content = soup.find("div",attrs={"id":"inner-content"})
-        external=content.find("a",attrs={"class","external"})['href']
-        datasheet=content.find("div",attrs={"class","datasheet-button-container"}).find("a")["data-direct-link"]
-        product_image=content.find("img",attrs={"id":"product-image", "class":"post-load"})["realsrc"]
-        prt(product_image)
-
-        return(
-            {
-                "breadcrumb": str(breadcrumb),
-                "title"     : title,
-                "content"   : str(content),
-                "external"  : external,
-                "datasheet" : datasheet,
-                "product_image" : product_image,
-                "videos"    : [],
-                "images"    : [],
-                "pdfs"      : [],
-                "files"     : [],
-            }
-        )
-
 
 
 
@@ -120,3 +75,4 @@ def test_product():
     assert "/GoTo/GoToWebPage?Context=Part:Polyken+All+Weather+Permanent+PE+Film+Tape+--+838&gotoURL=http%3A%2F%2Fcatalog.berryplastics.com%2Fproducts%2Fadhesiv%2Ffilm-tape%2Fadhesiv726838&gototype=TocPartWebPage&VID=128929&Comp=4287&OemId=0" in prod['external']
     assert ".pdf" in prod['datasheet']
     assert prod['product_image'] == "http://partimages.globalspec.com/28/3178/2978178_large.png"
+    assert prod['supplier'] == "Berry Plastics Corporation - Engineered Materials Division"

@@ -187,5 +187,51 @@ class HarvestSupplierProfile:
             self.ProFile['announcements']=announce
           #TODO add remaining categoried here!
 
+
+
 class HarvestProduct:
-    pass
+    """
+    A Content harvester for a single product page
+    e.g. /specsearch/partspecs?partId={D83387DD-BB71-4963-8654-3EBB35598EAF}&vid=129159&comp=2940&sqid=19029003
+
+    ProDuck = {
+        'breadcrumb' : '' #
+        'title'      : '' #
+        'content'    : '' #html of the main content in <div id="inner-content>"
+        'external'   :   '' #the "Get More Info on Supplier's Site" href
+        'datasheet'  : '' 
+        'product_image'  : '' #url of image
+        'supplier'  : '' #supplier name from <div class="supplier-name">
+        'videos'     :  [] #For later extraction from 'content'
+        'images'     :  [] #For later extraction from 'content'
+        'pdfs'       :  [] #For later extraction from 'content'
+        'files'       : [] #Everything else, for later extraction from 'content'
+    }
+    """
+    ProDuck={}
+
+    def get(self,html):
+        soup = bs(html,"html.parser")
+        breadcrumb=soup.find( "div",attrs={"id":"breadcrumb"} )
+        title = soup.find("div",attrs={"id":"header-container"}).find("h1").getText().strip()
+        content = soup.find("div",attrs={"id":"inner-content"})
+        external=content.find("a",attrs={"class","external"})['href']
+        datasheet=content.find("div",attrs={"class","datasheet-button-container"}).find("a")["data-direct-link"]
+        product_image=content.find("img",attrs={"id":"product-image", "class":"post-load"})["realsrc"]
+        supplier = soup.find("div",attrs={"class":"supplier-name"}).getText().strip()
+
+        return(
+            {
+                "breadcrumb": str(breadcrumb),
+                "title"     : title,
+                "content"   : str(content),
+                "external"  : external,
+                "datasheet" : datasheet,
+                "product_image" : product_image,
+                "supplier" : supplier,
+                "videos"    : [],
+                "images"    : [],
+                "pdfs"      : [],
+                "files"     : [],
+            }
+        )
