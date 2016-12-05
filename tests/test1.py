@@ -71,7 +71,7 @@ class HarvestProduct:
         'breadcrumb' : '' #
         'title'      : '' #
         'content'    : '' #html of the main content in <div id="inner-content>"
-        'supplier_product_page  :   '' #the "Get More Info on Supplier's Site" href
+        'external'   :   '' #the "Get More Info on Supplier's Site" href
         'datasheet'  : '' 
         'product_image'  : '' #url of image
         'videos'     :  [] #For later extraction from 'content'
@@ -84,11 +84,26 @@ class HarvestProduct:
 
     def get(self,html):
         soup = bs(html,"html.parser")
-        breadcrumb=soup.find("div",attrs={"id":"breadcrumb"})
-        
+        breadcrumb=soup.find( "div",attrs={"id":"breadcrumb"} )
+        title = soup.find("div",attrs={"id":"header-container"}).find("h1").getText().strip()
+        content = soup.find("div",attrs={"id":"inner-content"})
+        external=content.find("a",attrs={"class","external"})['href']
+        datasheet=content.find("div",attrs={"class","datasheet-button-container"}).find("a")["data-direct-link"]
+        product_image=content.find("img",attrs={"id":"product-image", "class":"post-load"})["realsrc"]
+        prt(product_image)
+
         return(
             {
-                "breadcrumb":breadcrumb
+                "breadcrumb": str(breadcrumb),
+                "title"     : title,
+                "content"   : str(content),
+                "external"  : external,
+                "datasheet" : datasheet,
+                "product_image" : product_image,
+                "videos"    : [],
+                "images"    : [],
+                "pdfs"      : [],
+                "files"     : [],
             }
         )
 
@@ -98,6 +113,10 @@ class HarvestProduct:
 def test_product():
     html=get_html_string("./tmp/products/838 Datasheet.html")
     prod = HarvestProduct().get(html)
-    prt(prod)
-    assert "POLYKEN ALL WEATHER PERMANENT PE FILM TAPE -- 838" in prod['breadcrumb'].getText()
-
+    #prt(prod)
+    assert "POLYKEN ALL WEATHER PERMANENT PE FILM TAPE -- 838" in prod['breadcrumb']
+    assert "Polyken All Weather" in prod['title']
+    assert "Sealing. Seal, patch,wrap, and splice" in prod['content']
+    assert "/GoTo/GoToWebPage?Context=Part:Polyken+All+Weather+Permanent+PE+Film+Tape+--+838&gotoURL=http%3A%2F%2Fcatalog.berryplastics.com%2Fproducts%2Fadhesiv%2Ffilm-tape%2Fadhesiv726838&gototype=TocPartWebPage&VID=128929&Comp=4287&OemId=0" in prod['external']
+    assert ".pdf" in prod['datasheet']
+    assert prod['product_image'] == "http://partimages.globalspec.com/28/3178/2978178_large.png"
