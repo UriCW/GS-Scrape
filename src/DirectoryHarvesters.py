@@ -3,33 +3,34 @@ from bs4 import BeautifulSoup as bs
 #import HarvestSupplierProfile
 
 class HarvestDirectoryOfSuppliers:
-  BASE_URL="http://www.globalspec.com/SpecSearch/SuppliersByName/AllSuppliers/"
-
+  """
+  Harvest the links from a Directory Of Suppliers HTML and generate a:
+  SoupLiars=[
+  {
+    'supplier' : ''
+    'link      : ''
+  },...
+  ]
+  """
   SoupLiars=[]
-  def __init__(self):
-    pass
 
-  def genEntry(self,supplier_name,supplier_page_url):
-    """ Generates and Returns a dictionary object from parameters (name,link) """
-    ret={
-      "supplier":supplier_name,
-      "link": supplier_page_url
-    }
-    return ret
-
-  def harvestSuppliersFromPage(self,html):
+  def get(self,html):
     soup = bs(html,'html.parser')
     suppliers=soup.findAll("tr",attrs={"class":"result-item"})
     if suppliers is None: return None #This is past the last page
     for s in suppliers:
       a=s.find("a")
       link=a['href']
-      name=a.getText()
-      entry=self.genEntry(name.strip(),link.strip())
+      name=a.getText().strip()
+      entry={
+        "supplier":str(name),
+        "link":str(link)
+      }
       self.SoupLiars.append(entry)
-      
+    return self.SoupLiars
+  
   def getPage(self,letter,page):
-    #TODO
+    #TODO move to helpers and finish
     #Gets a page html text using the format self.BASE_URL+"/"+letter+"/"+page
     #Returns None if past last page
     return None
@@ -44,25 +45,38 @@ class HarvestDirectoryOfSuppliers:
         self.harvestSuppliersFromPage(html)
 
 
-
-
 class HarvestIndustrialDirectory:
-    ProdActs=[]
-    def __init__(self):
-        pass
+    """
+    Harvest an industrial directory page
+    eg, /industrial-directory/browse/a/1
 
-    def harvestProductsFromPage(self,html):
+    ProdActs=[
+        {
+            'category'  : '',
+            'link'      : ''
+        },...
+    ]
+    """
+    ProdActs=[]
+    
+    def get(self,html):
         soup = bs(html,'html.parser')
         div=soup.find("div",attrs={'id':'keyword-results'})
         links=div.findAll('a')
         for link in links:
-          product=link.getText().strip()
+          category=link.getText().strip()
           url=link['href']
           entry={
-            'product':product,
-            'link':url
+            'category':str(category),
+            'link':str(url),
           }
           self.ProdActs.append(entry)
+        return self.ProdActs
+
+
+    """
+    To Deprecate (change and move to helpers)
+    """
 
     def testGetPage(self,letter,page):
         #TODO change this to properly get the urls instead of test files
@@ -80,7 +94,7 @@ class HarvestIndustrialDirectory:
             html=self.testGetPage(letter,page)
             if html is None: 
               continue
-            self.harvestProductsFromPage(html)
+            self.get(html)
 
 
 class HarvestIndustrialCategory:

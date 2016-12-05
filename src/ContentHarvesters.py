@@ -4,12 +4,14 @@ class HarvestSupplierProfile:
     Harvest data for a single Supplier profile.
     Stores result of harvest in 
     ProFile = {
-      'about': ...
-      'catalog': ...
-      'news': ...
+      'info'    : {} # TODO
+      'about': '',
+      'catalog': '',
+      'news': '',
       'announcements': ...
       'articles': ...
       'videos': ...
+      
     }
     """
     ProFile={}
@@ -185,8 +187,40 @@ class HarvestSupplierProfile:
           if category =="productannouncements":
             announce=self.getAnnouncements(html)
             self.ProFile['announcements']=announce
-          #TODO add remaining categoried here!
+          #TODO add remaining categories here!
 
+
+    def getInfo(self,html):
+        """
+        Gets the info/sidebar for a supplier
+        returns
+        {
+            'content': HTML of the <div id=supplier-info>    
+        }
+        """
+        soup = bs(html)
+        content = soup.find("div",attrs={"id":"supplier-info"})
+        prt(content)
+        #self.ProFile['info']
+        pass
+
+    def get(self,html):
+        categories=['about','catalog','news','productannouncements','techarticles','videos']
+        for category in categories:
+          if category =="about":
+            about=self.getAbout(html)
+            self.ProFile['about']=about
+          if category =="catalog":
+            catalog=self.getCatalog(html)
+            self.ProFile['catalog']=catalog
+          if category =="news":
+            news=self.getNews(html)
+            self.ProFile['news']=news
+          if category =="productannouncements":
+            announce=self.getAnnouncements(html)
+            self.ProFile['announcements']=announce
+          #TODO add remaining categoried here!
+          
 
 
 class HarvestProduct:
