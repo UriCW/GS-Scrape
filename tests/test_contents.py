@@ -44,11 +44,17 @@ def test_videos():
     assert videos[0]['url']=="https://www.youtube.com/embed/850aO98OAyI"
 
 
-
-
-
-
-
+def test_profile():
+    htmls={
+        'about':get_html_string("./tmp/suppliers/supplier.about.ABBElectrificationProducts.html"),
+        'catalog':get_html_string("./tmp/suppliers/supplier.catalog.ABBElectrificationProducts.html"),
+        'news':get_html_string("./tmp/suppliers/supplier.news.ABBElectrificationProducts.html"),
+        'announcements':get_html_string("./tmp/suppliers/supplier.productannouncements.ABBElectrificationProducts.html"),
+        'articles':get_html_string("./tmp/suppliers/supplier.techarticles.ABBElectrificationProducts.html"),
+        'videos':get_html_string("./tmp/suppliers/supplier.videos.ABBElectrificationProducts.html"),
+    }
+    profile=HarvestSupplierProfile().get(htmls)
+    assert "Memphis, TN 38125 USA" in profile['info']['content']
 
 
 def test_industrial_category():
@@ -77,10 +83,6 @@ def test_industrial_category():
 
 
 
-def test_profile():
-    #TODO collate all the above into one profile
-    #ie HarvestSupplierProfile.get()
-    pass
 
 
 
@@ -95,3 +97,4 @@ def test_product():
     assert ".pdf" in prod['datasheet']
     assert prod['product_image'] == "http://partimages.globalspec.com/28/3178/2978178_large.png"
     assert prod['supplier'] == "Berry Plastics Corporation - Engineered Materials Division"
+

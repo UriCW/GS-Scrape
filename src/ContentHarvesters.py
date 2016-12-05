@@ -4,7 +4,7 @@ class HarvestSupplierProfile:
     Harvest data for a single Supplier profile.
     Stores result of harvest in 
     ProFile = {
-      'info'    : {} # TODO
+      'info'    : {}
       'about': '',
       'catalog': '',
       'news': '',
@@ -16,13 +16,6 @@ class HarvestSupplierProfile:
     """
     ProFile={}
     
-    def getHTML(self,supplier_name,category):
-      """
-      Gets the HTML page for the supplier and category, currently look in ./tmp/suppliers for data
-      @TODO get this from URL
-      """
-      ret=open("./tmp/suppliers/supplier."+category+"."+supplier_name+".html").read()
-      return ret
     def getAbout(self,html):
       soup=bs(html,'html.parser')
       content=soup.find("div",attrs={'id':'main-content'})
@@ -171,23 +164,6 @@ class HarvestSupplierProfile:
         return Videos
 
 
-    def harvest(self,supplier_name):
-        categories=['about','catalog','news','productannouncements','techarticles','videos']
-        for category in categories:
-          html=self.getHTML(supplier_name,category)
-          if category =="about":
-            about=self.getAbout(html)
-            self.ProFile['about']=about
-          if category =="catalog":
-            catalog=self.getCatalog(html)
-            self.ProFile['catalog']=catalog
-          if category =="news":
-            news=self.getNews(html)
-            self.ProFile['news']=news
-          if category =="productannouncements":
-            announce=self.getAnnouncements(html)
-            self.ProFile['announcements']=announce
-          #TODO add remaining categories here!
 
 
     def getInfo(self,html):
@@ -198,29 +174,51 @@ class HarvestSupplierProfile:
             'content': HTML of the <div id=supplier-info>    
         }
         """
-        soup = bs(html)
+        soup = bs(html,"html.parser")
         content = soup.find("div",attrs={"id":"supplier-info"})
-        prt(content)
-        #self.ProFile['info']
-        pass
+        return {
+            'content'   :   str(content),
+        }
 
-    def get(self,html):
+    def get(self,htmls={} ):
+        """
+        Takes a collection of HTMLs from a supplier profile, 
+        constructs and returns a supplier profile dictionary
+        arguments
+            htmls={
+                'about'='',
+                'catalog'='',
+                'news'='',
+                'announcements'='',
+                'articles'='',
+                'videos'='',
+            }
+        return
+            ProFile={
+            }
+        """
         categories=['about','catalog','news','productannouncements','techarticles','videos']
         for category in categories:
           if category =="about":
-            about=self.getAbout(html)
+            about=self.getAbout( htmls['about'] )
             self.ProFile['about']=about
+            self.ProFile['info']=self.getInfo(htmls['about']) #Do this once
           if category =="catalog":
-            catalog=self.getCatalog(html)
+            catalog=self.getCatalog(htmls['catalog'])
             self.ProFile['catalog']=catalog
           if category =="news":
-            news=self.getNews(html)
+            news=self.getNews(htmls['news'])
             self.ProFile['news']=news
           if category =="productannouncements":
-            announce=self.getAnnouncements(html)
+            announce=self.getAnnouncements(htmls['accouncements'])
             self.ProFile['announcements']=announce
-          #TODO add remaining categoried here!
-          
+          if category =="techarticles":
+            arts=self.getArticles(htmls['articles'])
+            self.ProFile['articles']=arts
+          if category =="videos":
+            vids=self.getArticles(htmls['videos'])
+            self.ProFile['articles']=vids
+          return self.ProFile
 
 
 class HarvestProduct:
