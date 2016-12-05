@@ -7,7 +7,7 @@ def save_file( obj, file_name):
     Save to json,
     """
     with open(file_name,"w") as f:
-        json.dump(obj,f)
+        json.dump(obj,f, sort_keys=True, indent=4)
 
 def get_page(url):
     """
@@ -39,9 +39,7 @@ def get_directory_pages(base_url,letters=None,max_pages=101):
         letters.append("1");
     for letter in letters:
         for page in range(1,max_pages+1):
-          #html=self.getPage(letter,page)
           html=get_directory_page(base_url,letter,page)
-          prt(html)
           if html is None: 
             warnings.warn("Directory letter "+letter+" page "+page+" does not exist, assuming last page in letter")
             continue
