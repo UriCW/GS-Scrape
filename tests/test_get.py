@@ -78,8 +78,50 @@ def test_get_ic():
             #prt(prod)
 """
 
-def test_get_product():
-    cj = http.cookiejar.MozzilaCookieJar("./tmp/cookies.txt")
-    prt(cj)
-    pass
+
+
+#The following part require being authenticated
+#TODO figure out how this is done
+import urllib.parse
+import urllib.request
+import urllib.response
+def get_product_page(url):
+    userName = "int@gmx.co.uk"
+    passWord  = "password123"
+    # create an authorization handler
+    p = urllib.request.HTTPPasswordMgrWithDefaultRealm()
+    p.add_password(None, url, userName, passWord);
+
+    auth_handler = urllib.request.HTTPBasicAuthHandler(p)
+    prt(auth_handler)
+    opener = urllib.request.build_opener(auth_handler)
+
+    urllib.request.install_opener(opener)
+
+    try:
+        result = opener.open(url)
+        messages = result.read()
+        prt(messages)
+    except IOError as e:
+        #prt(e)
+        prt("Error")
+
+def test_product():
+    get_product_page("http://www.globalspec.com/specsearch/partspecs?partId={1FF99A78-29F0-4DAF-B9F6-D76C30D3E02D}&vid=128929&comp=4287")
+
+#def get_cookies():
+#    return {
+#        'NSC_mcwt_fohjoffsjoh360_qvcmjd_xfc':'ffffffffaf1f1c1845525d5f4f58455e445a4a423660',
+#    }
+
+
+
+#def test_get_product():
+    #cookies=get_cookies()
+    #prt(cookies)
+    #product_page=get_page("http://www.globalspec.com/specsearch/partspecs?partId={1FF99A78-29F0-4DAF-B9F6-D76C30D3E02D}&vid=128929&comp=4287",cookies)
+    #prt(product_page)
+    #cj = http.cookiejar.MozzilaCookieJar("./tmp/cookies.txt")
+    #prt(cj)
+    #pass
     #prt(jar)

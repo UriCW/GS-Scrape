@@ -9,13 +9,16 @@ def save_file( obj, file_name):
     with open(file_name,"w") as f:
         json.dump(obj,f, sort_keys=True, indent=4)
 
-def get_page(url):
+def get_page(url,cookies=None):
     """
     Returns an html page at url
     """
-    local_filename, headers = urllib.request.urlretrieve(url)
-    html_file = open(local_filename)
-    return html_file.read()
+    if cookies is None:
+        local_filename, headers = urllib.request.urlretrieve(url)
+        html_file = open(local_filename)
+        return html_file.read()
+    response=urllib.request.get(url,cookies=cookies)
+    return response
 
 def get_directory_page(base_url,letter,page):
     """

@@ -1,0 +1,19 @@
+OK, well I got seriously sidetracked by the damned authentication process of GS,
+There is no access to product page un-authenticated!
+they wont allow the normal python authentication methods (like urllib auth)
+copying the cookies didn't work
+the only thing the lets you load the page is litterally copying over the header of the http request from the browser to a text file and then using this to override python's "requests" headers.
+Using any kind of unrecognized POST requests will get you blocked, so login could be difficult
+
+So this is what we'll have to do:
+
+It probably needs to come from the same IP address, ie, your firefox browser needs the same IP address as the scrapper, so yes, use a proxy!
+
+Open firefox, login to GS and go to a product page.
+open the firefox console by pressing Ctrl+Shift+K
+Go to network and reload the page.
+scroll back up again and find the first get request, click it to open the sidebar, and inside there locate headers and click raw headers.
+
+Copy the request headers to ./tmp/ff_headers.txt
+
+
