@@ -5,6 +5,9 @@ def prt(txt):
     sys.stdout.write(str(txt)+"\n")
 
 def save_resp(resp, base_name="./tmp/resp"):
+    """
+    Saves the response data for manual inspection
+    """
     with open(base_name+'.content.html', 'w') as f:
         f.write(str(resp.content) )
     with open(base_name+'.cookies', 'w') as f:
@@ -14,6 +17,9 @@ def save_resp(resp, base_name="./tmp/resp"):
 
 
 def load_headers(fname):
+    """
+    Loads headers extracted from browser 
+    """
     lines=open(fname,"r").readlines()
     ret={}
     for line in lines:
@@ -24,6 +30,9 @@ def load_headers(fname):
 
 
 def get(url):
+    """
+    Gets an html doucment using the browser headers
+    """
     session = requests.session()
     produrl=url
     headers=load_headers("./tmp/ff_headers.txt")
@@ -36,5 +45,6 @@ def get(url):
 def test_product_get():
     url="http://www.globalspec.com/specsearch/partspecs?partId={5BD6F3DA-F4AB-402F-8DB6-8C3F888850BE}&vid=149783&comp=4287&sqid=19039927"
     page=get(url)
-    prt(page)
+    #prt(page)
+    assert "CHR" in page
  
