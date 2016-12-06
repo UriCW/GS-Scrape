@@ -1,5 +1,6 @@
 import sys
 import urllib.request
+import requests
 import warnings
 import json
 def save_file( obj, file_name):
@@ -9,9 +10,22 @@ def save_file( obj, file_name):
     with open(file_name,"w") as f:
         json.dump(obj,f, sort_keys=True, indent=4)
 
+
+def get(url):
+    """
+    Gets an html doucment using the browser headers
+    """
+    session = requests.session()
+    produrl=url
+    headers=load_headers("./tmp/ff_headers.txt")
+    resp=session.get(produrl,headers=headers)
+    save_resp(resp,"./tmp/get_fake_ff_session")
+    return resp.text
+
 def get_page(url,cookies=None):
     """
     Returns an html page at url
+    Depracated use get(url)
     """
     if cookies is None:
         local_filename, headers = urllib.request.urlretrieve(url)
@@ -19,6 +33,29 @@ def get_page(url,cookies=None):
         return html_file.read()
     response=urllib.request.get(url,cookies=cookies)
     return response
+
+def save_resp(resp, base_name="./tmp/resp"):
+    """
+    Saves the response data for manual inspection
+    """
+    with open(base_name+'.content.html', 'w') as f:
+        f.write(str(resp.content) )
+    with open(base_name+'.cookies', 'w') as f:
+        f.write( str(resp.cookies) )
+    with open(base_name+'.headers', 'w') as f:
+        f.write( str(resp.headers) )
+
+def load_headers(fname):
+    """
+    Loads headers from a file
+    """
+    lines=open(fname,"r").readlines()
+    ret={}
+    for line in lines:
+        n=line.split(": ")[0].strip()
+        v=line.split(": ")[1].strip()
+        ret[n]=v
+    return ret
 
 def get_directory_page(base_url,letter,page):
     """
