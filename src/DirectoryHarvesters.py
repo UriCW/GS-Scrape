@@ -6,7 +6,7 @@ class HarvestProductsDirectory:
     """
     eg http://www.globalspec.com/search/products?page=ms#sqid=19041002&comp=2940&show=products
     @TODO
-    ProDActS=[
+    ProDUctS=[
         {
             'title' : ''
             'product_page':''
