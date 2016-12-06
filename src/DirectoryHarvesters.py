@@ -2,6 +2,21 @@ from bs4 import BeautifulSoup as bs
 #from . import HarvestSupplierProfile
 #import HarvestSupplierProfile
 
+class HarvestProductsDirectory:
+    """
+    eg http://www.globalspec.com/search/products?page=ms#sqid=19041002&comp=2940&show=products
+    @TODO
+    ProDActS=[
+        {
+            'title' : ''
+            'product_page':''
+        },...
+    ]
+    """
+    pass
+
+
+
 class HarvestDirectoryOfSuppliers:
   """
   Harvest the links from a Directory Of Suppliers HTML and generate a:
@@ -135,6 +150,7 @@ class HarvestIndustrialCategory:
         """
         e.g /industrial-directory/audio_amplifier_schematic
         I Hate this!
+        @TODO change param from ?show=suppliers to ?show=products
         """
         cats=[]
         for i,link in enumerate( content.findAll("a",attrs={'class':'search-result-title'}) ):
