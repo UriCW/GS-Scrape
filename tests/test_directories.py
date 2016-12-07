@@ -43,4 +43,5 @@ def test_industrial_category():
     assert prods[0]['title']=="Industrial Tapes - Polyken All Weather Permanent PE Film Tape -- 838"
     assert prods[0]['url']=="http://www.globalspec.com/specsearch/partspecs?partId={1FF99A78-29F0-4DAF-B9F6-D76C30D3E02D}&vid=128929&comp=4287"
 
-
+def test_products_listing():
+    html=""

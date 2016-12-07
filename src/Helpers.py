@@ -3,17 +3,49 @@ import urllib.request
 import requests
 import warnings
 import json
-def save_file( obj, file_name):
+
+
+
+
+class FetchQue:
     """
-    Save to json,
+    Handle queing extracted addresses for later extraction
+    """
+    catalogs=[]
+    que_file=None
+
+    def __init__(self,catalogs_file):
+        self.catalogs=load_json_file(catalogs_file)
+        self.que_file=catalogs_file
+
+    def add(self,catalog):
+        if not any(d['url'] == catalog['url'] for d in self.catalogs):
+            self.catalogs.append(catalog)
+            save_json_file(self.catalogs,self.que_file)
+
+
+
+
+
+
+def save_json_file( obj, file_name):
+    """
+    Save to json file
     """
     with open(file_name,"w") as f:
         json.dump(obj,f, sort_keys=True, indent=4)
 
+def load_json_file(fname):
+    """
+    Loads a json file
+    """
+    with open(fname,"r") as json_data:
+        ret = json.load(json_data)
+    return ret
 
 def get(url):
     """
-    Gets an html doucment using the browser headers
+    Gets an html at url using the browser headers
     """
     session = requests.session()
     produrl=url
@@ -21,6 +53,13 @@ def get(url):
     resp=session.get(produrl,headers=headers)
     save_resp(resp,"./tmp/get_fake_ff_session")
     return resp.text
+
+def get_from_file(fname):
+    """
+    Reads an html file and returns it
+    """
+    return open(fname).read()
+
 
 def get_page(url,cookies=None):
     """

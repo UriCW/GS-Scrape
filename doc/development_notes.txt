@@ -16,4 +16,21 @@ scroll back up again and find the first get request, click it to open the sideba
 
 Copy the request headers to ./tmp/ff_headers.txt
 
+=================================================
 
+OK, well the search results (catalog) page doesn't contain relevant data
+IE http://www.globalspec.com/search/products?page=ms#sqid=19041002&comp=2940&show=products
+
+It instead populates this with the contents of a json request to 
+
+http://www.globalspec.com/Search/GetProductResults?sqid=19041002&comp=2940&show=products&origWebHitId=471275866&method=getNewResults
+
+The keys are:
+sqid - Get this from the sqid of the first url
+comp - Get this again from the original request name
+WebHitId - this is in the page's <span id="webhit">
+
+So we need to take the original url, extract the sqid and comp arguments
+fetch the page, extract WebHitId, and generate a request to the json url.
+
+Then we need to harvest that for more catalogs or products (it contains both)

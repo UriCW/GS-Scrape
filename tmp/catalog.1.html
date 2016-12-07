@@ -1,0 +1,677 @@
+
+			<!DOCTYPE HTML>
+
+		
+				<!--[if lte IE 8]> <html class="ie8"> <![endif]-->
+				<!--[if IE 9]>     <html class="ie9"> <![endif]-->
+				<!--[if (gt IE 9)|(!IE)]><!--> <html id="globalspec" class="desktop responsive-content matching-suppliers page-with-filter"> <!--<![endif]-->
+			<head > 
+	<title>Product & Services Search Results</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<!-- Framework CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/bundle/main-bundle-808e93d51511746e57328c0871ee8de4-min.css"> 
+<link rel="stylesheet" type="text/css" href="/css/blueprint/print.css" media="print">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]--> 
+
+<script type="text/javascript">
+	// This is a queue of functions to be executed by the Google Analytics tracker.
+	
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-10659429-1']);
+	_gaq.push(['_setDomainName', '.globalspec.com']);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['_trackPageLoadTime']);
+	
+	// this string holds the javascript to execute when the page has finished loading
+	
+	var m_OnLoadFunctions = "";
+
+	// this function will handle our onload event
+	
+	function HandleOnLoad() {
+		eval(m_OnLoadFunctions);
+	}
+
+	// tell the page to run the code when it has finished loading
+	
+	window.onload = HandleOnLoad;
+
+	// register a new function to run on load by appending it to our set of functions
+	
+	function RegisterOnLoadEvent(yourJSCode) {
+		m_OnLoadFunctions = m_OnLoadFunctions + yourJSCode + ";"
+	} </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.0/jquery-migrate.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	var $j = jQuery.noConflict();
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script><link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css"> <script src="http://www.globalspec.com/javascripts/sitebase/shared.js" type="text/javascript"></script><script src="http://www.globalspec.com/js/gs/gs-public-site-lib.js" type="text/javascript"></script><script src="http://www.globalspec.com/miscellaneous/engineering360_shared/ajax/optionalLoading.js" type="text/javascript"></script><script src="http://www.globalspec.com/javascripts/engineering360_shared/jquery.hammer.js" type="text/javascript"></script><script src="http://www.globalspec.com/javascripts/engineering360_shared/classie.js" type="text/javascript"></script><script src="http://www.globalspec.com/javascripts/engineering360_shared/modernizr.custom.js" type="text/javascript"></script><script src="http://www.globalspec.com/javascripts/engineering360_shared/mlpushmenu.js" type="text/javascript"></script><script src="http://www.globalspec.com/javascripts/engineering360_shared/header.js" type="text/javascript"></script></head> <body > <div class="container" id="page-wrapper"> <div style="display:none;">
+	<div id="update-throbber">
+		<p style="text-align: center;">
+			<img src="/pix/ajax/emote_ellipsis.gif"> Searching for items that meet your criteria.
+		</p>
+	</div>
+	
+	<div id="view-change">
+		<p style="text-align: center;">
+			<img src="/pix/ajax/emote_ellipsis.gif"> Switching views of your results <img src="/pix/ajax/emote_ellipsis.gif">
+		</p>
+	</div>
+</div> <div id="quick-view-dialog" class="modalDialog" style="">
+	<div id="product-detail-container"></div>
+	<div class="clear"></div>
+	<span class="close-modal show-on-desktop" onclick="$j('#product-detail-container').html(''); closeModalDialog();" title="Cancel"></span>
+</div> <div id="ref-design-dialog" class="modalDialog" style="">
+	<div id="product-ref-design-container"></div>
+	<div class="clear"></div>
+	<span class="close-modal" onclick="$j('#product-ref-design-container').html(''); closeModalDialog();" title="Cancel"></span>
+</div> 
+
+		<div id="saveSupplierConfirm" class="modalDialog">
+			<div class="left title-bar">
+				<div class="modal-header">Supplier Saved</div>
+				<div class="show-on-phone close" onclick="closeModalDialog();"></div>
+			</div>
+			<div class="myGSSaveButton">
+				<div class="myglobalspec-button-save">&nbsp;</div>
+			</div>
+			<div class="clear"></div>
+
+			<div class="modal-content">
+				<div id="mygs-part-save-success">
+					You have successfully saved <strong></strong> to your supplier list.
+				</div>
+				<div class="clear"></div>
+				<div align="center">
+					<input class="modal-button" type="button" value="Go to My Suppliers" onclick="document.location.href='/myglobalspec/suppliers'; return false;">
+					<input class="modal-button" type="button" value="Close" onclick="closeModalDialog();">
+				</div>
+			</div>
+		</div>
+
+		 <div id="saveSupplierDialog" class="modalDialog">
+			
+		<div class="left save-part-header title-bar">
+			<div class="modal-header">Save Supplier</div>
+			<div class="show-on-phone close" onclick="closeModalDialog();"></div>
+		</div>
+
+		<div class="myGSSaveButton">
+			<div class="myglobalspec-button-save">&nbsp;</div>
+		</div>
+		<div class="clear"></div>
+
+		<div class="modal-content">
+			<form id="frmSaveSupplier" name="frmSaveSupplier" onsubmit="saveSupplier(this.hdnVendId.value, this.note.value); closeModalDialog(); return false;" action="" method="post">
+			<div class="formField">
+				<div class="formFieldLabel left">Supplier Name:</div>
+				<div class="left span-2">
+					<input type="text" disabled="disabled" name="vendName" maxlength="100" class="wideInput">
+				</div>
+			</div>
+			<div class="clear"></div>
+
+			<div class="formField formField-large">
+				<div class="formFieldLabel left">Note:<br><span class="label-subtext">Notes are optional and private.</span></div>
+				<div class="left span-2">
+					<textArea id="note" name="note" title="" class="wideInput muted"></textarea>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="formAction modal-buttons">
+				<input class="modal-button" type="submit" name="btnSubmit" value="Save">
+				<span class="modal-button form-cancel" onclick="closeModalDialog();"><a href="javascript:void(0)">Cancel</a></span>
+			</div>
+			<input type="hidden" name="hdnVendId" value="">
+			<input type="hidden" name="hdnVendName" value="">
+			</form>
+		</div>
+	
+		</div>
+	
+
+		<div id="addedPartDialog" class="modalDialog">
+			<div class="left title-bar">
+				<div class="modal-header">Part Saved</div>
+				<div class="show-on-phone close" onclick="closeModalDialog();"></div>
+			</div>
+			<div class="myGSSaveButton">
+				<div class="myglobalspec-button-save">&nbsp;</div>
+			</div>
+			<div class="clear"></div>
+
+			<div class="modal-content">
+				<div id="mygs-part-save-success" class="span-15">
+					You have successfully added <strong id="partNumber"></strong>&nbsp;from <em id="supplierName"></em>&nbsp;to your part list.
+				</div>
+				<div class="clear"></div>
+
+				<div align="center">
+					<input class="modal-button" type="button" onclick="closeModalDialog(); return false;" value="Keep Searching">
+				
+					<input class="modal-button" type="button" onclick="document.location='/myglobalspec/parts'" value="View My Parts">
+				
+				</div>
+			</div>
+		</div>
+
+		<div id="addGSPartDialog" class="modalDialog">
+			
+		<div class="left save-part-header title-bar">
+			<div class="modal-header">Save Part</div>
+			<div class="show-on-phone close" onclick="closeModalDialog();"></div>
+		</div>
+		
+		
+		<div class="myGSSaveButton">
+			<div class="myglobalspec-button-save">&nbsp;</div>
+		</div>
+		<div class="clear"></div>
+
+		<div class="modal-content">
+			<form id="frmAddPart" name="frmAddPart" onsubmit="addPartFromGsPart(partNumber.value, description.value, productType.value, hdnURL.value, hdnVendId.value, hdnVendName.value, hdnGsPartId.value, hdnGsCompType.value, hdnGsQueryId.value, hdnComponentId.value); closeModalDialog(); return false;" action="" method="post">
+			<div class="formField">
+				<div class="formFieldLabel left">Part Name / #:</div>
+				<div class="left span-2">
+					<input type="text" value="" name="partNumber" maxlength="100" class="wideInput">
+				</div>
+			</div>
+			<div class="clear"></div>
+
+			<div class="formField">
+				<div class="formFieldLabel left">Product Type:</div>
+				<div class="left span-2">
+					<input type="text" value="" name="productType" maxlength="100" class="wideInput muted">
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="formField formField-large">
+				<div class="formFieldLabel left">Description:</div>
+				
+				<div class="left span-2">
+					<textArea id="description" name="description" class="wideInput muted"></textarea>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="formAction modal-buttons">
+				<input class="modal-button submit" type="submit" name="btnSubmit" value="Save">
+				<input class="modal-button cancel" type="button" value="Cancel" onclick="closeModalDialog();">
+			</div>
+
+			<input type="hidden" name="hdnURL" value="" maxlength="100" class="wideInput">
+			<input type="hidden" name="hdnVendId" value="">
+			<input type="hidden" name="hdnVendName" value="">
+			<input type="hidden" name="hdnGsPartId" value="">
+			<input type="hidden" name="hdnGsCompType" value="">
+			<input type="hidden" name="hdnGsQueryId" value="">
+			
+
+			<input type="hidden" name="hdnComponentId" value="">
+			</form>
+		</div>
+	
+		</div>
+	
+
+		<div id="warning-modal" class="modalDialog">
+			<h4 class="title-text">Are You Sure?</h4>
+			<div class="message"></div>
+			<span class="action-links hidden">
+				<a class="ok-link" href="javascript:void(0);" onclick="document.location='/'">OK</a><br><br>
+				<a class="cancel-link" href="javascript:void(0);" onclick="closeModalDialog();">Cancel</a>
+			</span>
+			<span class="actions">
+				<span class="button ok-button" onclick="document.location='/'">OK</span>
+				<span class="button" onclick="closeModalDialog();">Cancel</span>
+			</span>
+			<span class="close-modal" onclick="closeModalDialog();" title="Cancel"></span>
+		</div>
+	<div class="container mp-pusher" id="header-wrapper"> <div class="container" id="masthead"> 
+	<a name="top"></a>
+	
+	<div id="mp-menu" class="mp-menu">
+		<div class="mp-level">
+			
+			<ul id="umbrella-content" class="products" data-omniture-id="umbrella">
+
+				
+					<li id="home" class="umbrella-item">
+						
+							<a href="http://www.globalspec.com">Home</a>
+						
+					</li>
+					
+					<li id="editorial" class="umbrella-item has-dropdown">
+						
+							<a href="http://insights.globalspec.com">News & Analysis</a>
+						
+							<div id="editorial-dropdown" class="dropdown mp-level">
+								
+								<h2 class="menu-level-title">News & Analysis</h2>
+								<a class="mp-back" href="#">Back</a>
+								
+								
+							</div>
+						
+					</li>
+					
+					<li id="products" class="umbrella-item selected has-dropdown">
+						
+							<a href="http://www.globalspec.com/productfinder">Products & Suppliers</a>
+						
+							<div id="products-dropdown" class="dropdown mp-level">
+								
+								<h2 class="menu-level-title">Products & Suppliers</h2>
+								<a class="mp-back" href="#">Back</a>
+								
+									<div class="menu-item menu-level-home"><a href="http://www.globalspec.com/productfinder">Products & Suppliers Home</a></div>
+								
+								
+							</div>
+						
+					</li>
+					
+					<li id="standards" class="umbrella-item">
+						
+							<a href="http://standards.globalspec.com">Standards Library</a>
+						
+					</li>
+					
+					<li id="reference" class="umbrella-item">
+						
+							<a href="http://reference.globalspec.com">Reference Library</a>
+						
+					</li>
+					
+					<li id="community" class="umbrella-item">
+						
+							<a href="http://cr4.globalspec.com">Engineering Community</a>
+						
+					</li>
+					
+					<li id="stay-informed" class="umbrella-item has-dropdown">
+						
+							<span class="unlinked-umbrella-item">Stay Informed</span>
+						
+							<div id="stay-informed-dropdown" class="dropdown mp-level">
+								
+								<h2 class="menu-level-title">Stay Informed</h2>
+								<a class="mp-back" href="#">Back</a>
+								
+								
+							</div>
+						
+					</li>
+					<div id="account-links" class="two-line">Welcome,&nbsp;<a target="_top" href="http://www.globalspec.com/MyGlobalSpec">int&#x40;gmx.co.uk                                                                                       </a><br><a target="_top" href="http://www.globalspec.com/MyGlobalSpec/account">Profile</a></div> 
+
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</div>
+
+	
+	<div id="unified-header-content" class="products" data-omniture-id="header">
+		<div id="header-top">
+			<div id="logo">
+				<a href="http://www.globalspec.com" data-omniture-id="logo">
+					<img src='/images/engineering360_shared/header/logo.png' class="desktop">
+					<img src="/images/engineering360_shared/header/logo.png" class="mobile">
+				</a>
+				
+				
+			</div>
+			<div id="header-right">
+				
+	<form id="global-search" method="get" action="" onSubmit="return checkHeaderForm(this)">
+		<div class="header-dropdown">
+			<dl id="header-searchtype" class="dropdown">
+			   	
+						<dt id="products"><span class="chosen-searchtype">Products & Suppliers</span><span class="notch"></span></dt>
+						
+				<dd id="global-search-type">
+					<ul>
+						
+							<li id="all">
+								<a href="javascript:void(0);" onclick="setGlobalSearchActionDestination('All', 'http://www.globalspec.com/search/all', 'all', 'true');">
+									All
+								</a>
+							</li>
+						<div class="divider"></div> 
+							<li id="editorial">
+								<a href="javascript:void(0);" onclick="setGlobalSearchActionDestination('News & Analysis', 'http://insights.globalspec.com/article/search', 'editorial', 'true');">
+									News & Analysis
+								</a>
+							</li>
+						<div class="divider"></div> 
+							<li id="products">
+								<a href="javascript:void(0);" onclick="setGlobalSearchActionDestination('Products & Suppliers', 'http://www.globalspec.com/search/startSearch?page=gs', 'products', 'true');">
+									Products & Suppliers
+								</a>
+							</li>
+						<div class="divider"></div> 
+							<li id="standards">
+								<a href="javascript:void(0);" onclick="setGlobalSearchActionDestination('Standards Library', 'http://standards.globalspec.com/search/standards', 'standards', 'true');">
+									Standards Library
+								</a>
+							</li>
+						<div class="divider"></div> 
+							<li id="reference">
+								<a href="javascript:void(0);" onclick="setGlobalSearchActionDestination('Reference Library', 'http://reference.globalspec.com/search/reference', 'reference', 'true');">
+									Reference Library
+								</a>
+							</li>
+						<div class="divider"></div> 
+							<li id="community">
+								<a href="javascript:void(0);" onclick="setGlobalSearchActionDestination('Community', 'http://cr4.globalspec.com/search/cr4search', 'community', 'true');">
+									Community
+								</a>
+							</li>
+						
+			        </ul>
+			    </dd>
+
+			</dl>
+		</div>
+		<span class="magnify-icon"></span>
+
+		<input type="text" id="header-searchbox" class="title-as-default catcomplete " name="query" title="" value="">
+		<input type="hidden" name="newSearch" value="new">
+		<input class="global-search-button" type="submit" value="GO">
+		<script type="text/javascript">
+			$j(function() {
+				setGlobalSearchActionDestination('Products & Suppliers', 'http://www.globalspec.com/search/startSearch?page=gs', 'products', 'true');
+			});
+		</script>
+	</form>
+
+			</div>
+			<div id="parent-logo">
+				<img src="/images/engineering360_shared/header/parent-logo.png" class="desktop">
+				<p>Acquired Engineering360</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<nav class="nav-bar menu-disabled">
+			<div class="small">
+				<div id="trigger" class="menu-button menu-trigger">
+					<span></span><span></span><span></span>
+				</div>
+				
+				<div class="page-title show-on-phone" id="small-page-title">
+					
+				</div>
+				<div class="cr4-alerts">
+				</div>
+				<div class="search-button">
+				</div>
+				
+				
+						<div id="user-info-small">
+							<div class="user-icon"></div>
+							<div class="menu">
+								<div id="account-links" class="two-line">Welcome,&nbsp;<a target="_top" href="http://www.globalspec.com/MyGlobalSpec">int&#x40;gmx.co.uk                                                                                       </a><br><a target="_top" href="http://www.globalspec.com/MyGlobalSpec/account">Profile</a></div>
+							</div>
+						</div>
+					
+
+				<div class="clear"></div>
+			</div>
+		</nav>
+
+		
+		
+		<div id="responsive-menu-bar">
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+
+	/* Adding a class to the umbrella content div so that we know if the user is browsing
+	   around inside of it. If the class exists then we will not delay the sub-menu, however
+	   the first time the user hovers over a tab, the sub-menu will be delayed for a short
+	   time. This is to prevent "flashing" sub-menus when quickly moving the mouse from the
+	   address bar down to the page content. JTH 9/21/2015 */
+
+	var umbrellaTimer;
+	$j("#umbrella-content").mouseenter(function() {
+		$j("#umbrella-content").addClass("mousein");
+	}).mouseleave(function() {
+		$j("#umbrella-content").removeClass("mousein");
+	});
+
+
+	/* Using a JS timer, we allow the user to mouse off the dropdown half a second
+	   before it closes.  This reduces the annoyance when you're off by one pixel with
+	   your mouse and the dropdown you're trying to use closes instantly on you.
+
+	   This is overriden when you enter another umbrella item.  The timer only applies
+	   to umbrella items that have dropdowns.  MRF 9/3/2015 */
+
+	var ddTimer;
+
+	$j("#umbrella-content .umbrella-item").mouseenter(function() {
+		clearTimeout(ddTimer);
+		currElem = $j(this);
+		if ($j("#umbrella-content").hasClass("mousein")) {
+			currElem.siblings().removeClass("hover");
+			currElem.addClass("hover");
+		} else {
+			umbrellaTimer = setTimeout(function(e) {
+				currElem.siblings().removeClass("hover");
+				currElem.addClass("hover");
+			}, 300);
+		}
+
+	}).mouseleave(function() {
+		clearTimeout(umbrellaTimer);
+		var elementLeft = $j(this);
+		if (elementLeft.hasClass("has-dropdown")) {
+			ddTimer = setTimeout(function(e) {
+				elementLeft.removeClass("hover");
+			}, 500);
+		} else {
+			$j(this).removeClass("hover");
+		}
+	});
+</script>
+
+
+
+
+<div class="clear"></div> 
+	<div id="bannerDiv-container" class="ad-container">
+		<iframe id="bannerDiv" name="bannerDiv" width="728" height="90" scrolling="no"></iframe>
+	</div>
+	</div> <div class="container" id="header-content"> 
+<div id="breadcrumb">
+	
+				<span class="node">
+					<a href="http://www.globalspec.com">HOME</a>
+				</span>
+			
+			<span class="node-divider"></span>
+		
+				<span class="node">
+					<a href="http://www.globalspec.com/productfinder">PRODUCTS &AMP; SUPPLIERS</a>
+				</span>
+			
+	<div class="clear"></div>
+</div>
+</div> </div> <div class="container mp-pusher" id="content-wrapper"> 
+	<span id="webhit" data-id="471090332"></span>
+	<span id="page-type" data-type="ms"></span>
+
+
+<script type="text/javascript">
+
+
+
+var developmentServer;
+
+
+
+var modifiedSpec;
+
+
+var specsToUpdate = {};
+
+var serializedEvents = {};
+
+
+$j(function(){
+	$j(window).bind('hashchange', function(e) {
+
+		var params = $j.deparam(location.hash.substring(1));
+
+		if (params.query != undefined && params.query.length > 0 && $j('#page-type').attr('data-type') === 'gs') {
+			$j('#header-searchbox').addClass("in-use");
+			$j('#header-searchbox').attr('value', params.query);
+		}
+
+		
+		if (location.hash === '' || (
+			(params.sqid == undefined || params.sqid == 0) &&
+			(params.vid == undefined || params.vid == 0) &&
+			(params.comp == undefined || params.comp == 0) &&
+			(params.query == undefined || params.comp == ''))) {
+
+			alert("Insufficient parameters to execute search.");
+			window.location = "/";
+		} else if ((params.comp == undefined || params.comp == 0 || params.comp == '') &&
+			(params.vid != undefined || params.vid > 0)){
+
+			alert("Insufficient parameters to execute search.");
+			window.location = "/supplier/catalog?vid=" + params.vid;
+		} else {
+			if (!search_ajaxSearchPerformed) {
+				$j('#update-throbber').dialog('open');
+			} else if (!search_searchUpdate) {
+				$j('#view-change').dialog('open');
+			}
+			search_getSearchResults(location.hash.substring(1));
+		}
+	});
+
+	$j(window).trigger('hashchange');
+});
+
+</script> <div class="prepend-3 span-7 append-2 last" id="page-header"> </div> <div class="span-3" id="navigation"> </div> <div class="span-7" id="main-content"> </div> <div class="span-2 last" id="secondary-content"> </div> </div> <div class="container mp-pusher" id="push"> </div> </div> <div class="container mp-pusher" id="footer-wrapper"> <div class="container" id="footer-content"> 
+	<div class="span-2 first-border ">
+		<div id="first-column">
+			<ul>
+				
+				<li><a href="http://www.globalspec.com/AboutUs" rel="nofollow">About Engineering360</a></li>
+				<li><a href="http://www.globalspec.com/advertising/" onclick="this.target='_blank';">Advertise With Us</a></li>
+				<li><a href="http://www.globalspec.com/ClientServices/Login" rel="nofollow">Client Services</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="span-2 column">
+		<div class="social">
+			Follow Engineering360<br>
+			
+<a href="http://www.twitter.com/engineering_360" class="social-tw" target="_blank"></a>
+
+<a href="https://www.facebook.com/Engineering360" class="social-fb" target="_blank"></a>
+		</div>
+	</div>
+	<div class="span-2 column">
+		<div>
+			<ul>
+				
+				<li><a href="http://www.globalspec.com/SiteMap/Directory/">Top Categories</a></li>
+				<li class="noborder"><a href="http://www.globalspec.com/Help/TermsOfUse" rel="nofollow" onclick="this.target='_blank';">Terms of Use</a></li>
+				
+			</ul>
+		</div>
+	</div>
+
+<div class="span-5 last legal">
+	<div class="legalContent">
+		&copy; Copyright 2016 IEEE GlobalSpec - All rights reserved. Use of this website signifies your agreement to the <a style='text-decoration:underline;' class='tc' href='http://www.ieee.org/site_terms_conditions.html' target='_blank'>IEEE Terms and Conditions</a>.
+	</div>
+</div>
+<div id="footer-logo">
+	<img src="/images/engineering360_shared/header/parent-logo-white.png" />
+</div>
+
+<div class="clear"></div>
+
+<div id="parent-footer">
+	<a href="http://www.globalspec.com/">Home</a>
+	&#160;|&#160;
+	<a href="http://www.globalspec.com/SiteMap">Site Map</a>
+	&#160;|&#160;
+	<a href="http://www.globalspec.com/ContactUs">Contact</a>
+	&#160;|&#160;
+	<a class="accessibilityLink" target="_blank">Accessibility</a>
+	&#160;|&#160;
+	<a class="nondiscriminationLink" target="_blank">Nondiscrimination Policy</a>
+	&#160;|&#160;
+	<a class="privacyAndCookiesLink" target="_blank">Privacy & Opting Out of Cookies</a>
+</div>
+
+			<script type="text/javascript">var s_account="globspecprod15"</script>
+			<script src="http://www.globalspec.com/js/bundle/gs-standard-bundle-e70b3888918aadf92778d673719d027b-min.js" type="text/javascript"></script>
+
+	
+	<noscript>
+		
+		
+	</noscript>
+
+	
+	<script src="http://www.globalspec.com/js/adRollPixel.js" type="text/javascript"></script>
+
+		
+		<!-- SiteCatalyst code version: H.25.4.
+		Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+		More info available at http://www.omniture.com -->
+		
+		<script language="JavaScript" type="text/javascript"><!--
+		
+			s.zip="";
+			s.prop2="";
+			s.prop1="";
+			s.eVar2="";
+			s.eVar3="";
+			s.pageType="";
+			s.eVar4="";
+			s.eVar30="D\x3Dc14";
+			s.eVar5="";
+			s.prop12="";
+			s.prop13="";
+			s.state="";
+			s.prop14="\x2Fsearch\x2Fproducts\x3Fpage\x3Dms";
+			s.prop10="\x2D1952562173";
+			s.prop11="";
+			s.pageName="\x2Fsearch\x2Fproducts\x3Aempty";
+			s.channel="globalspec";
+			s.products="";
+			s.server="AN\x2D2PGLSWB04";
+			s.purchaseID="";
+			s.prop9="YES";
+			s.eVar1="";
+			s.prop3="";
+			s.campaign="";
+
+			if((typeof s.events !== "undefined") && (s.events)){
+				s.events += ",";
+			} else {
+				s.events = "";
+			}
+			s.events += "";
+		//--></script>
+		
+		<script language="JavaScript" type="text/javascript"><!--
+		
+			//--></script>
+			
+<span id="page-info"
+	data-id = "471090332"
+	data-server = "www.globalspec.com"
+></span>
+</div> </div> <div id="sitewide-overlay"> </div> </body> </html> 
