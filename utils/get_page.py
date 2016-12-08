@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 import sys
 import os
+import Helpers
 
+print("LALALA")
 
+if __name__=='__main__':
+    print("hi")
+"""
 if __name__ == '__main__' and __package__ is None:
     from os import sys, path
     sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
@@ -11,3 +16,4 @@ if __name__ == '__main__' and __package__ is None:
     url="http://www.globalspec.com/search/products?page=ms#comp=2940&show=products&sqid=18975208"
     page=get(url)
     print(page)
+"""

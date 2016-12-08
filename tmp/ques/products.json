@@ -1,7 +1,27 @@
 [
     {
         "harvested": false,
-        "product_page": "/specsearch/partspecs?partId={E490BF2D-13E3-4F38-BBE4-FFC29D8ECE3D}&comp=2940&vid=121615&sqid=19048503",
-        "title": ""
+        "title": "Maselec 4 Channel Microphone Pre-Amplifier -- MMA-4XR",
+        "url": "/specsearch/partspecs?partId={E490BF2D-13E3-4F38-BBE4-FFC29D8ECE3D}&comp=2940&vid=121615&sqid=19048503"
+    },
+    {
+        "harvested": false,
+        "title": "Sound Level Measuring Amplifier -- NA-42",
+        "url": "/specsearch/partspecs?partId={D83387DD-BB71-4963-8654-3EBB35598EAF}&vid=129159&comp=2940&sqid=19048503"
+    },
+    {
+        "harvested": false,
+        "title": "The PE-2A/PE-3 Line Amplifier",
+        "url": "/specsearch/partspecs?partId={62B03952-74F6-442B-96B9-93D4F47E2AF7}&comp=2940&vid=129988&sqid=19048503"
+    },
+    {
+        "harvested": false,
+        "title": "Speakerman Stereo Amplifier -- SPE1",
+        "url": "/specsearch/partspecs?partId={F405FF0C-B6AA-4CCB-B718-BF69BE3DB15B}&vid=281382&comp=2940&sqid=19048503"
+    },
+    {
+        "harvested": false,
+        "title": "PVA-30 Optional Amplifier",
+        "url": "/specsearch/partspecs?partId={5E1AC67D-1A62-4F33-B882-4BE0570AD34C}&vid=109965&comp=2940&sqid=19048503"
     }
 ]

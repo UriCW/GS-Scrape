@@ -10,22 +10,19 @@ import json
 class FetchQue:
     """
     Handle queing extracted addresses for later extraction
+    Initilize given a que file 
     """
-    catalogs=[]
+    qued=[]
     que_file=None
 
-    def __init__(self,catalogs_file):
-        self.catalogs=load_json_file(catalogs_file)
-        self.que_file=catalogs_file
+    def __init__(self,que_file):
+        self.qued=load_json_file(que_file)
+        self.que_file=que_file
 
-    def add(self,catalog):
-        if not any(d['url'] == catalog['url'] for d in self.catalogs):
-            self.catalogs.append(catalog)
-            save_json_file(self.catalogs,self.que_file)
-
-
-
-
+    def add(self,item):
+        if not any(d['url'] == item['url'] for d in self.qued):
+            self.qued.append(item)
+            save_json_file(self.qued,self.que_file)
 
 
 def save_json_file( obj, file_name):

@@ -3,59 +3,6 @@ from bs4 import BeautifulSoup as bs
 from . import Helpers
 #from . import HarvestSupplierProfile
 #import HarvestSupplierProfile
-class HarvestCatalog:
-    """
-    The content on the search pages is inserted dynamically with json
-    eg. http://www.globalspec.com/search/products?page=ms#sqid=19041002&comp=2940&show=products
-    lists the contents of json responce to
-    http://www.globalspec.com/Search/GetProductResults?sqid=19048503&comp=2940&show=products&origWebHitId=471172407&method=getNewResults
-
-    """
-    catalogQue=None
-    productQue=None
-    def __init__(self):
-        self.catalogQue=Helpers.QueCatalog("./tmp/ques/catalogs.json")
-        self.productQue=Helpers.QueProduct()
-
-    def get(self,html):
-        """
-        Returns a list of either catalogs or products
-        Append to relevant que
-        
-        ret=[
-            #Catalog
-            {
-                'title':'',
-                'url'  :'',
-                'harvested' : False
-            }...
-        ]
-        """
-        ret=[]
-        soup = bs(html,"html.parser")
-        for a in soup.findAll("a"):
-            try:
-                href=a['href']
-                if "search/products" in href: #A catalog
-                    entry={
-                        'title': a.getText().strip(),
-                        'url'  : href, #Need to change this to actual catalog data
-                        'harvested' :   False
-                    }
-                    catalogQue.add(entry)
-                    ret.append(entry)
-                    print(entry)
-                elif "specsearch/partspecs" in href: #A product
-                    entry={
-                        'title': a.getText().strip(),
-                        'product_page'  : href, #Need to change this to actual catalog data
-                        'harvested' :   False
-                    }
-                    #TODO add to que
-                    ret.append(entry)
-            except:
-                continue
-
 
 class HarvestDirectoryOfSuppliers:
   """
