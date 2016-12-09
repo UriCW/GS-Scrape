@@ -49,8 +49,9 @@ def scrape_catalogs_que():
 
 def scrape_industrial_category(category):
     """
+    Populates the category.json que from a "category"
     """
-    url="http://www.globalspec.com/industrial-directory/audio_amplifier_schematic"
+    url="http://www.globalspec.com/industrial-directory/"+category
     cat=DirectoryHarvesters.HarvestIndustrialCategory()
     q=Helpers.FetchQue("./tmp/ques/categories.json")
     html=Helpers.get(url)
@@ -58,20 +59,26 @@ def scrape_industrial_category(category):
     for ent in jason:
         ent['harvested'] = False
         uri=ent['url']
-        prt(uri)
         uri=Helpers.skip_processGlobalSearch(uri)
         ent['url'] = uri
         prt("STORING: "+uri)
         q.add(ent)
 
 def scrape_industrial_categories_que():
+    """
+    Iterate over categories.json que, if not harvested then harvest it's url
+    """
     que=Helpers.FetchQue("./tmp/ques/categories.json")
     domain="http://www.globalspec.com"
     for ent in que.qued:
         if ent['harvested']==False:
-            url=domain+str(ent['url']).strip()
-            prt("Harvesting: "+url)
-            scrape_catalog_pages(url)
+            prt(ent)
+            #url=domain+str(ent['url']).strip()
+            uri=ent['url'].strip()
+            uri=Helpers.convert_link_to_json(uri,0)
+
+            prt("Harvesting: "+uri)
+            scrape_catalog_pages(domain+uri)
             ent['harvested']=True
             que.save()
         else:
@@ -83,7 +90,7 @@ def scrape_industrial_categories_que():
 def test_harvest_category():
     scrape_industrial_category('audio_amplifier_schematic')
 
-def d_test_scrape_industrial_categories_que():
+def test_scrape_industrial_categories_que():
     scrape_industrial_categories_que()
 
 def d_test_catalogs_que():

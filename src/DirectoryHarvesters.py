@@ -137,14 +137,15 @@ class HarvestIndustrialDirectory:
 
     ProdActs=[
         {
-            'category'  : '',
-            'link'      : ''
+            'title'  : '',
+            'url'      : ''
         },...
     ]
     """
     ProdActs=[]
     
     def get(self,html):
+        ret=[] #Stop using self.ProdActs!
         soup = bs(html,'html.parser')
         div=soup.find("div",attrs={'id':'keyword-results'})
         links=div.findAll('a')
@@ -152,11 +153,13 @@ class HarvestIndustrialDirectory:
           category=link.getText().strip()
           url=link['href']
           entry={
-            'category':str(category),
-            'link':str(url),
+            'title':str(category),
+            'url':str(url),
           }
-          self.ProdActs.append(entry)
-        return self.ProdActs
+          ret.append(entry)
+          #self.ProdActs.append(entry)
+        #return self.ProdActs
+        return ret
 
 
     """

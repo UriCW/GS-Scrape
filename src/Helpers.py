@@ -125,7 +125,9 @@ def get_directory_page(base_url,letter,page):
     eg http://www.globalspec.com/SpecSearch/SuppliersByName/AllSuppliers/A/1
     """
     url= base_url+str(letter)+"/"+str(page)
-    return get_page(url)
+    #print(url)
+    return get(url)
+    #return get_page(url)
 
 def get_directory_pages(base_url,letters=None,max_pages=101):
     """
@@ -162,3 +164,21 @@ def skip_processGlobalSearch(url):
     comp=get_url_argument(url,"comp")
     ret="/search/products?page=ms#comp={0}&show=products&sqid=0".format(comp)
     return ret
+
+
+def convert_link_to_json(url,origWebHitId):
+    #Takes a link to an html page and convert it to a request for the json location, adds origWebHitId
+    #returns only the URI (no globalspec.com)
+    try:
+        sqid=url.split("sqid=")[1].split("&")[0].strip() or 0
+        comp=url.split("comp=")[1].split("&")[0].strip()
+        if "vid=" not in url:
+            act_url="/Search/GetProductResults?sqid={0}&comp={1}&show=products&origWebHitId={2}&method=getNewResults".format(sqid,comp,origWebHitId)
+        else: #Vendor catalog (of products only? or other catalogs too?)
+            vid=url.split("vid=")[1].split("&")[0].strip()
+            act_url="/Search/GetSupplierResults?sqid={0}&comp={1}&show=products&origWebHitId={2}&vid={3}&method=getNewResults".format(sqid,comp,origWebHitId,vid)
+        return(act_url)
+    except Exception as ex:
+        print("Missing url arguments for catalog harvester")
+        print("url : "+url)
+        raise ex
