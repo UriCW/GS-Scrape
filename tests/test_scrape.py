@@ -10,7 +10,7 @@ def prt(txt):
 
 def check_last_page(url,page_number):
     """
-    Returns the json contents of url, or False if not found (or no more pages)
+    Returns the json contents of url, or None if not found (or no more pages)
     """
     jon=Helpers.get_json(url+"&pg="+str(page_number) ) #Live, use sparsely in dev
     params=url.split('?')[1]
@@ -25,6 +25,7 @@ def scrape_catalog_pages(root_url):
         prt("\nChecking URL ->"+root_url+" "+str(i) )
         jon=check_last_page(root_url,i)
         if jon==None:
+            prt("Scrapped "+str(i)+"pages")
             break
         l=cat.get(jon)
         #prt(l)
@@ -45,7 +46,18 @@ def scrape_catalogs_que():
             prt(ent['url'])
             continue
 
-def test_catalogs_que():
+def test_harvest_category():
+    url="http://www.globalspec.com/industrial-directory/audio_amplifier_schematic"
+    cat=DirectoryHarvesters.HarvestIndustrialCategory()
+    q=Helpers.FetchQue("./tmp/ques/categories.json")
+    html=Helpers.get(url)
+    jason=cat.get(html)
+    for ent in jason:
+        ent['harvested'] = False
+        q.add(ent)
+    
+
+def d_test_catalogs_que():
     scrape_catalogs_que()
 
 
