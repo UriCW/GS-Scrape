@@ -55,6 +55,17 @@ def get(url):
     save_resp(resp,"./tmp/debug/get_fake_ff_session")
     return resp.text
 
+def get_redirect(url):
+    """
+    Gets the redirect address using browser headers
+    """
+    session = requests.session()
+    headers=load_headers("./tmp/ff_headers.txt")
+    resp=session.head(url,headers=headers,allow_redirects=True)
+    save_resp(resp,"./tmp/debug/get_head_fake_ff_session")
+    return resp.url
+
+
 def get_json(url):
     """
     Gets a json from a url
@@ -137,3 +148,17 @@ def get_directory_pages(base_url,letters=None,max_pages=101):
           ret.append(html)
     return ret
 
+def get_url_argument(url,argument):
+    """
+    Takes a url argument 
+    """
+    ret=url.split(argument+"=")[1].split("&")[0]
+    return ret
+
+def skip_processGlobalSearch(url):
+    #WARNNING:
+    #This is under the dubious assumption that argument ?sqid effects nothing but the order of items!
+    #Don't panic, it does look like it's the case!
+    comp=get_url_argument(url,"comp")
+    ret="/search/products?page=ms#comp={0}&show=products&sqid=0".format(comp)
+    return ret

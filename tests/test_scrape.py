@@ -12,6 +12,7 @@ def check_last_page(url,page_number):
     """
     Returns the json contents of url, or None if not found (or no more pages)
     """
+    prt(url)
     jon=Helpers.get_json(url+"&pg="+str(page_number) ) #Live, use sparsely in dev
     params=url.split('?')[1]
     Helpers.save_json_file(jon,"./tmp/debug/"+params+"&pg="+str(page_number) )
@@ -46,7 +47,9 @@ def scrape_catalogs_que():
             prt(ent['url'])
             continue
 
-def test_harvest_category():
+def scrape_industrial_category(category):
+    """
+    """
     url="http://www.globalspec.com/industrial-directory/audio_amplifier_schematic"
     cat=DirectoryHarvesters.HarvestIndustrialCategory()
     q=Helpers.FetchQue("./tmp/ques/categories.json")
@@ -54,8 +57,34 @@ def test_harvest_category():
     jason=cat.get(html)
     for ent in jason:
         ent['harvested'] = False
+        uri=ent['url']
+        prt(uri)
+        uri=Helpers.skip_processGlobalSearch(uri)
+        ent['url'] = uri
+        prt("STORING: "+uri)
         q.add(ent)
-    
+
+def scrape_industrial_categories_que():
+    que=Helpers.FetchQue("./tmp/ques/categories.json")
+    domain="http://www.globalspec.com"
+    for ent in que.qued:
+        if ent['harvested']==False:
+            url=domain+str(ent['url']).strip()
+            prt("Harvesting: "+url)
+            scrape_catalog_pages(url)
+            ent['harvested']=True
+            que.save()
+        else:
+            prt("Already harvested, doing nothing")
+            prt(ent['url'])
+            continue
+    pass
+
+def test_harvest_category():
+    scrape_industrial_category('audio_amplifier_schematic')
+
+def d_test_scrape_industrial_categories_que():
+    scrape_industrial_categories_que()
 
 def d_test_catalogs_que():
     scrape_catalogs_que()

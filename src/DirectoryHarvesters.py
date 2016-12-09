@@ -26,7 +26,7 @@ class HarvestCatalog:
         #Takes a link to an html page and convert it to a request for the json location, adds origWebHitId
         #returns only the URI (no globalspec.com)
         try:
-            sqid=url.split("sqid=")[1].split("&")[0].strip()
+            sqid=url.split("sqid=")[1].split("&")[0].strip() or 0
             comp=url.split("comp=")[1].split("&")[0].strip()
             if "vid=" not in url:
                 act_url="/Search/GetProductResults?sqid={0}&comp={1}&show=products&origWebHitId={2}&method=getNewResults".format(sqid,comp,origWebHitId)
