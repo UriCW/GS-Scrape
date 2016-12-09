@@ -1,8 +1,91 @@
 import sys
 from bs4 import BeautifulSoup as bs
 from . import Helpers
+import json
 #from . import HarvestSupplierProfile
 #import HarvestSupplierProfile
+
+class HarvestCatalog:
+    """
+    The content on the search pages is inserted dynamically with json
+    eg. http://www.globalspec.com/search/products?page=ms#sqid=19041002&comp=2940&show=products
+    lists the contents of json responce to
+    http://www.globalspec.com/Search/GetProductResults?sqid=19048503&comp=2940&show=products&origWebHitId=471172407&method=getNewResults
+    
+    if there is a vid= in the url, this is a vendor catalog, it comes from
+    a json at /Search/GetSupplierResults
+    eg 
+    http://www.globalspec.com/Search/GetSupplierResults?sqid=19041002&comp=2940&vid=335701&origWebHitId=475234156&method=getNewResults
+    
+    Product pages are under "/specsearch/partspecs?..." 
+    """
+    catalogQue=None
+    productQue=None
+
+    def convert_link(self,url,origWebHitId):
+        #Takes a link to an html page and convert it to a request for the json location, adds origWebHitId
+        #returns only the URI (no globalspec.com)
+        try:
+            sqid=url.split("sqid=")[1].split("&")[0].strip()
+            comp=url.split("comp=")[1].split("&")[0].strip()
+            if "vid=" not in url:
+                act_url="/Search/GetProductResults?sqid={0}&comp={1}&show=products&origWebHitId={2}&method=getNewResults".format(sqid,comp,origWebHitId)
+            else: #Vendor catalog (of products only? or other catalogs too?)
+                vid=url.split("vid=")[1].split("&")[0].strip()
+                act_url="/Search/GetSupplierResults?sqid={0}&comp={1}&show=products&origWebHitId={2}&vid={3}&method=getNewResults".format(sqid,comp,origWebHitId,vid)
+            return(act_url)
+        except Exception as ex:
+            print("Missing url arguments for catalog harvester")
+            print("url : "+url)
+            raise ex
+
+
+    def get(self,json):
+        """
+        Returns a list of either catalogs or products
+        Append to relevant que
+        
+        ret=[
+            {
+                'title':'',
+                'url'  :''
+            },...
+        ]
+        """
+        html=json["RESULTS"]
+        #needed to convert link to actual json data
+        origWebHitId=json["PARAMETERS"]["origWebHitId"] 
+        ret=[]
+        self.catalogQue=Helpers.FetchQue("./tmp/ques/catalogs.json")
+        self.productQue=Helpers.FetchQue("./tmp/ques/products.json")
+        soup = bs(html,"html.parser")
+        for a in soup.findAll("a",attrs={"class":"product-name"}):
+            try:
+                href=a['href']
+                if "search/products" in href: #A catalog
+                    a_url=self.convert_link(href,origWebHitId)
+                    entry={
+                        'title': a.getText().strip(),
+                        'url'  : a_url, #Only some of the catalogs have this
+                        'harvested' :   False
+                    }
+                    self.catalogQue.add(entry)
+                    ret.append(entry)
+                elif "specsearch/partspecs" in href: #A product
+                    entry={
+                        'title': a.getText().strip(),
+                        'url'  : href, 
+                        'harvested' :   False
+                    }
+                    self.productQue.add(entry)
+                    ret.append(entry)
+            except Exception as err:
+                raise(Exception("Parsing catalog failed"))
+        return ret
+
+
+
+
 
 class HarvestDirectoryOfSuppliers:
   """
@@ -128,8 +211,8 @@ class HarvestIndustrialCategory:
                 'product_page' : None
             }, ...
         ]
-        where title is the title text and id is the component id (?comp=N)
-        put in product url too if you can,
+        where title is the title text and cat_id is the component id (?comp=N)
+        put in product url too if you can
     """
     CatEgories=[]
 

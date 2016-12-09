@@ -24,6 +24,11 @@ class FetchQue:
             self.qued.append(item)
             save_json_file(self.qued,self.que_file)
 
+    def save(self):
+        save_json_file(self.qued,self.que_file)
+        
+            
+    
 
 def save_json_file( obj, file_name):
     """
@@ -45,11 +50,21 @@ def get(url):
     Gets an html at url using the browser headers
     """
     session = requests.session()
-    produrl=url
     headers=load_headers("./tmp/ff_headers.txt")
-    resp=session.get(produrl,headers=headers)
-    save_resp(resp,"./tmp/get_fake_ff_session")
+    resp=session.get(url,headers=headers)
+    save_resp(resp,"./tmp/debug/get_fake_ff_session")
     return resp.text
+
+def get_json(url):
+    """
+    Gets a json from a url
+    jsons of the product catalogs are not user protected, no need for headers methinks
+    """
+    session = requests.session()
+    resp=session.get(url)
+    save_resp(resp,"./tmp/debug/get.json.session")
+    return resp.json()
+
 
 def get_from_file(fname):
     """

@@ -1,0 +1,467 @@
+{
+    "AREA": "Audio Amplifiers and Preamplifiers",
+    "BANNERID": 0,
+    "BREADCRUMB": "\r\n<div id=\"breadcrumb\">\r\n\t\r\n\t\t\t\t<span class=\"node\">\r\n\t\t\t\t\t<a href=\"http://www.globalspec.com\">HOME</a>\r\n\t\t\t\t</span>\r\n\t\t\t\r\n\t\t\t<span class=\"node-divider\"></span>\r\n\t\t\r\n\t\t\t\t<span class=\"node\">\r\n\t\t\t\t\t<a href=\"/productfinder\">PRODUCTS &AMP; SUPPLIERS</a>\r\n\t\t\t\t</span>\r\n\t\t\t\r\n\t\t\t<span class=\"node-divider\"></span>\r\n\t\t\r\n\t\t\t\t<span class=\"node\">\r\n\t\t\t\t\t<a href=\"/productfinder/sensors_transducers_detectors\">SENSORS, TRANSDUCERS AND DETECTORS</a>\r\n\t\t\t\t</span>\r\n\t\t\t\r\n\t\t\t<span class=\"node-divider\"></span>\r\n\t\t\r\n\t\t\t\t<span class=\"node\">\r\n\t\t\t\t\t<a href=\"/productfinder/sensors_transducers_detectors/acoustic_sensing\">ACOUSTIC AND AUDIO EQUIPMENT</a>\r\n\t\t\t\t</span>\r\n\t\t\t\r\n\t\t\t<span class=\"node-divider\"></span>\r\n\t\t\r\n\t\t\t\t<span class=\"node\">\r\n\t\t\t\t\t<a href=\"/search/products?comp=2940\">AUDIO AMPLIFIERS AND PREAMPLIFIERS</a>\r\n\t\t\t\t</span>\r\n\t\t\t\r\n\t\t\t<span class=\"node-divider\"></span>\r\n\t\t\r\n\t\t\t\t<span class=\"leaf node\">\r\n\t\t\t\t\tROHM SEMICONDUCTOR USA, LLC\r\n\t\t\t\t</span>\r\n\t\t\t\r\n\t<div class=\"clear\"></div>\r\n</div>\r\n",
+    "CURRENTTAB": "products",
+    "FILTER": "\r\n\r\n<div id=\"supplier-skin-wrapper\">\r\n<div id=\"supplier-info\" class=\"append-bottom\">\r\n\r\n\r\n\t\t\t\t<div class=\"logo-container\">\r\n\t\t\t\t\t<a href=\"http://www.globalspec.com/supplier/profile/ROHMSemiconductorUSA?comp=2940&sqid=19075256\">\r\n\t\t\t\t\t\t<img src=\"http://www.globalspec.com/ROHMSemiconductorUSA/LOGO.JPG\"\r\n\t\t\t\t\t\t\talt=\"ROHM Semiconductor USA, LLC\"\r\n\t\t\t\t\t\t\tborder=\"0\">\r\n\t\t\t\t\t</a>\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\r\n\t\t\t<div class=\"contact-info-container\">\r\n\t\t\t\t<div class=\"info-section supplier-name\">\r\n\t\t\t\t\tROHM Semiconductor USA, LLC\r\n\t\t\t\t</div>\r\n\t\t\t\t<div id=\"supplier-info-collapse-container\"  class=\"hidden\">\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"info-section contact-info \">\r\n\t\t\t\t\t\t<div class=\"supplier-address\">\r\n\t\t\t\t\t\t\t2323 Owen Street <br> Santa Clara, CA 95054 USA \r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"supplier-phone\">\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<div class=\"left-col\">\r\n\t\t\t\t\t\t\t\t\tPhone:\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"right-col\">\r\n\t\t\t\t\t\t\t\t(408) 720-1900<br />\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t<div class=\"clear\"></div>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<div class=\"left-col\">\r\n\t\t\t\t\t\t\t\t\tFax:\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"right-col\">\r\n\t\t\t\t\t\t\t\t(408) 720-1921 \r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t<div class=\"supplier-description\">\r\n\t\t\t\t\t\t\tBusiness Type: Manufacturer\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t<div class=\"info-section\">\r\n\t\t\t\t\t\t<span class=\"small-blue-arrow\"></span>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<a class=\"external\" href=\"http://www.globalspec.com/Goto/GotoWebPage?gotoUrl=http%3A%2F%2Fwww%2Erohm%2Ecom%2Fus&gotoType=webHome&VID=98259\" onclick=\"exitTracking('event19,event30', {eVar48:'Web Lead',eVar27:'Web',eVar4:98259,prop3:98259,eVar47:'Client',prop47:'Client'}, 'Web Lead');\" target=\"_blank\">\r\n\t\t\t\t\t\t\t\tSupplier Website\r\n\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"info-section\">\r\n\t\t\t\t\t\t\t<span class=\"small-blue-arrow\"></span>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<a href=\"http://www.globalspec.com/supplier/contact/ROHMSemiconductorUSA?comp=2940&sqid=19075256\">\r\n\t\t\t\t\t\t\t\t\tEmail Supplier\r\n\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t<div class=\"social-media\">\r\n\t\t\t\t<span class=\"follow-supplier\">Follow Supplier:</span>\r\n\t\t\t\t\r\n\t\t\t\t\t<a class=\"external\" href=\"http://www.twitter.com/rohmsemi\" onclick=\"exitTracking('event19,event30', {eVar48:'Web Lead',eVar27:'Web',eVar4:98259,prop3:98259,eVar47:'Client',prop47:'Client'}, 'Web Lead');trackClick('/goto/gotoWebPage?comp=2940&vid=98259&gotourl=http%3A%2F%2Fwww.twitter.com%2Frohmsemi&gototype=twitter&context=Social+Media+Twitter&sqid=19075256');\" target=\"_blank\">\r\n\t\t\t\t\t\t<span class=\"social-tw\" title=\"ROHM Semiconductor USA, LLC on Twitter\"></span>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\r\n\t\t\t\t\t<a class=\"external\" href=\"http://www.facebook.com/pages/ROHM-Semiconductor/116429947578?ref=ts\" onclick=\"exitTracking('event19,event30', {eVar48:'Web Lead',eVar27:'Web',eVar4:98259,prop3:98259,eVar47:'Client',prop47:'Client'}, 'Web Lead');trackClick('/goto/gotoWebPage?comp=2940&vid=98259&gotourl=http%3A%2F%2Fwww.facebook.com%2Fpages%2FROHM-Semiconductor%2F116429947578%3Fref%3Dts&gototype=facebook&context=Social+Media+Facebook&sqid=19075256');\" target=\"_blank\">\r\n\t\t\t\t\t\t<span class=\"social-fb\" title=\"ROHM Semiconductor USA, LLC on Facebook\"></span>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\r\n\t\t\t\t\t<a class=\"external\" href=\"https://plus.google.com/113887816424892827391/posts\" onclick=\"exitTracking('event19,event30', {eVar48:'Web Lead',eVar27:'Web',eVar4:98259,prop3:98259,eVar47:'Client',prop47:'Client'}, 'Web Lead');trackClick('/goto/gotoWebPage?comp=2940&vid=98259&gotourl=https%3A%2F%2Fplus.google.com%2F113887816424892827391%2Fposts&gototype=googlePlus&context=Social+Media+Google%2B&sqid=19075256');\" target=\"_blank\">\r\n\t\t\t\t\t\t<span class=\"social-gp\" title=\"ROHM Semiconductor USA, LLC on Google+\"></span>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\r\n\t\t\t</div>\r\n\t\t\r\n\r\n\t\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t\t\t<div class=\"supplier-info-container-bar-close hidden\">\r\n\t\t\t\t\t\t<a href=\"javascript:void(0);\" id=\"close-supplier-contact-info\">\r\n\t\t\t\t\t\t\t<strong>Close Contact Information</strong>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div id=\"supplier-info-show-container\" class=\"supplier-info-container-bar-open \">\r\n\t\t\t\t\t<a href=\"javascript:void(0);\" id=\"show-supplier-contact-info\">\r\n\t\t\t\t\t\t<strong>View supplier contact info:</strong>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<br>E-MAIL, PHONE, WEB\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\r\n<div class=\"clear\"></div>\r\n\r\n</div>\r\n</div>\r\n<div id=\"supplier-skin-accordion-control\" class=\"show-on-phone\"></div>\r\n\r\n\r\n\n\r\n<div id=\"search-filter-wrapper\" class=\"filter append-bottom\" style=\"max-height:100%;\">\r\n\t<div class=\"header\">\r\n\t\t<img class=\"show-on-phone\" src=\"/pix/responsive/arrow-white.png\" />\r\n\t\tNarrow Your Results\r\n\t\t<img class=\"show-on-phone\" src=\"/pix/responsive/arrow-white.png\" />\r\n\t</div>\r\n\r\n\t\r\n\t\t\t<form id=\"search-filter\" action=\"/search/processGlobalSearch\" method=\"post\">\r\n\t\t\t\t\r\n\t\t<div id=\"search-facet-header-group\" class=\"search-facet-group\" style=\"max-height:100%;\">\r\n\t\t\t<div class=\"search-facet-group-label\">\r\n\t\t\t\tAdd Your Criteria:\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<div id=\"keyword-facet-form\">\r\n\t\t\t\t<input id=\"keyword-facet\" type=\"text\" name=\"idPrompt_textSearch_1\" value=\"\" />\r\n\t\t\t\t<input id=\"keyword-facet-submit\" type=\"submit\" onClick=\"search_addKeywordFacet(); return false;\" value=\"Go!\" />\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\r\n\t\t\t\t<div id=\"search-specified-facets\">\r\n\t\t\t\t\t<div class=\"search-facet-group\">\r\n\t\t\t\t\t\t<div class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\tYour specifications\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\r\n\t\t<div class=\"search-facet\" id=\"\" data-value=\"\">\r\n\t\t\t<a href=\"javascript:void(0)\" class=\"search-facet-remove\" onclick=\"search_removeSupplierFacet(98259); return false;\"><span class=\"checkbox\"></span><span class=\"label\">ROHM Semiconductor USA, LLC</span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\r\n\t\t\t\t\t\t<input type=\"hidden\" name=\"vid\" value=\"98259\">\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\r\n\t\t<div class=\"search-facet\" id=\"\" data-value=\"\">\r\n\t\t\t<a href=\"javascript:void(0)\" class=\"search-facet-remove area-facet\" onclick=\"search_removeAreaFacet(2940); return false;\"><span class=\"checkbox\"></span><span class=\"label\">Audio Amplifiers and Preamplifiers</span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\r\n\t\t\t\t\t\t<input type=\"hidden\" name=\"comp\" value=\"2940\">\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\r\n\t\t\t<div id=\"available-spec-facets\">\r\n\t\t\t\t\r\n\r\n\t\t\t\t\t\t<div class=\"search-facet-group\" style=\"\">\r\n\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"edit-facet-link\" data-facettoedit=\"cb_Type\">\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\tType \r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t</a>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t<div class=\"search-facets\" id=\"search-facet-group-1\">\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" onclick=\"search_addSpecFacet('idPrompt_type_amplifier', 0, 'Add:Type: Amplifier', this); return false;\">Amplifier</a>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" onclick=\"search_addSpecFacet('idPrompt_type_preamplifier', 0, 'Add:Type: Preamplifier', this); return false;\">Preamplifier</a>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet show-on-phone\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"responsive-edit-facet-link \" data-facettoedit=\"cb_Type\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tSelect Multiple\r\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t<div class=\"edit-facet-container\" id=\"edit-cb_Type\" data-facet=\"Type\"\r\n\t\t\t\r\n\t\t\t\tdata-option1=false \r\n\t\t\t\tdata-option2=false >\r\n\t\t\t<div class=\"notch\"></div>\r\n\t\t\t\r\n\t\t\t<a onclick=\"return search_handleHelpLink(this, true);\" alt=\"Help\" href=\"/help/spechelpfilter2?comp=2940#cb_Type\">\r\n\t\t\t\t<span class=\"help-button\"></span>\r\n\t\t\t</a>\r\n\t\t\r\n\t\t\t<div class=\"label\">Select one or more Type criteria:</div>\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\t<div class=\"options\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"chkbox-option\">\r\n\t\t\t\t\t\t\t<label><input type=\"checkbox\" name=\"idPrompt_type_amplifier\" id=\"option1\" value=\"1\"\r\n\t\t\t\t\t\t\t\t/>\r\n\t\t\t\t\t\t\tAmplifier\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"chkbox-option\">\r\n\t\t\t\t\t\t\t<label><input type=\"checkbox\" name=\"idPrompt_type_preamplifier\" id=\"option2\" value=\"1\"\r\n\t\t\t\t\t\t\t\t/>\r\n\t\t\t\t\t\t\tPreamplifier\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\t\t<span class=\"buttons\">\r\n\t\t\t<span class=\"button-mask\"><input class=\"close-edit-facet\" type=\"button\" value=\"Cancel\"></span>\r\n\t\t\t<span class=\"button-mask last\"><input class=\"update-facet\" type=\"button\" value=\"Update Results\"></span>\r\n\t\t</span>\r\n\t\r\n\t\t</div>\r\n\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t<div class=\"search-facet-group\" style=\"\">\r\n\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"edit-facet-link\" data-facettoedit=\"cb_Amplifier_Class\">\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\tAmplifier Class \r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t</a>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t<div class=\"search-facets\" id=\"search-facet-group-2\">\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" onclick=\"search_addSpecFacet('idPrompt_amplifier_class_class_d', 0, 'Add:Amplifier Class: Class D', this); return false;\">Class D</a>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet show-on-phone\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"responsive-edit-facet-link \" data-facettoedit=\"cb_Amplifier_Class\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tSelect Multiple\r\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t<div class=\"edit-facet-container\" id=\"edit-cb_Amplifier_Class\" data-facet=\"Amplifier Class\"\r\n\t\t\t\r\n\t\t\t\tdata-option1=false >\r\n\t\t\t<div class=\"notch\"></div>\r\n\t\t\t\r\n\t\t\t<a onclick=\"return search_handleHelpLink(this, true);\" alt=\"Help\" href=\"/help/spechelpfilter2?comp=2940#cb_Amplifier_Class\">\r\n\t\t\t\t<span class=\"help-button\"></span>\r\n\t\t\t</a>\r\n\t\t\r\n\t\t\t<div class=\"label\">Select one or more Amplifier Class criteria:</div>\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\t<div class=\"options\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"chkbox-option\">\r\n\t\t\t\t\t\t\t<label><input type=\"checkbox\" name=\"idPrompt_amplifier_class_class_d\" id=\"option1\" value=\"1\"\r\n\t\t\t\t\t\t\t\t/>\r\n\t\t\t\t\t\t\tClass D\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\t\t<span class=\"buttons\">\r\n\t\t\t<span class=\"button-mask\"><input class=\"close-edit-facet\" type=\"button\" value=\"Cancel\"></span>\r\n\t\t\t<span class=\"button-mask last\"><input class=\"update-facet\" type=\"button\" value=\"Update Results\"></span>\r\n\t\t</span>\r\n\t\r\n\t\t</div>\r\n\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t<div class=\"search-facet-group\" style=\"\">\r\n\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"edit-facet-link\" data-facettoedit=\"idPrompt_specifications_output_gain\">\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\tOutput Gain \r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t</a>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t<div class=\"search-facets\" id=\"search-facet-group-3\">\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" onclick=\"search_addSpecFacet('range_idPrompt_specifications_output_gain_1', 0, 'Add:Output Gain: 28 - 35 dB', this); return false;\">28 - 35 dB</a>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" onclick=\"search_addSpecFacet('range_idPrompt_specifications_output_gain_2', 0, 'Add:Output Gain: 35 dB and up', this); return false;\">35 dB and up</a>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet show-on-phone\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"responsive-edit-facet-link custom-range\" data-facettoedit=\"idPrompt_specifications_output_gain\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter a Range\r\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t<div class=\"edit-numeric-container\" id=\"edit-idPrompt_specifications_output_gain\" data-facet=\"Output Gain:\"\r\n\t\t\tdata-low=\"\" data-high=\"\">\r\n\r\n\t\t\t<div class=\"notch\"></div>\r\n\r\n\t\t\t\r\n\t\t\t<a onclick=\"return search_handleHelpLink(this, true);\" alt=\"Help\" href=\"/help/spechelpfilter2?comp=2940#idPrompt_specifications_output_gain\">\r\n\t\t\t\t<span class=\"help-button\"></span>\r\n\t\t\t</a>\r\n\t\t\r\n\r\n\t\t\t<div class=\"label\">Select a range for Output Gain:</div>\r\n\r\n\t\t\t<div class=\"options\">\r\n\t\t\t\t\r\n\t\t\t\t\t<div class=\"at-least\">\r\n\t\t\t\t\t\t<input type=\"text\" name=\"idPrompt_specifications_output_gain_atleast\" class=\"low\" value=\"\">\r\n\t\t\t\t\t\t<label for=\"idPrompt_specifications_output_gain_atleast\">At least</label>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t\t<div class=\"to\">to</div>\r\n\t\t\t\t\r\n\t\t\t\t\t<div class=\"no-more-than\">\r\n\t\t\t\t\t\t<input type=\"text\" name=\"idPrompt_specifications_output_gain_nomore\" class=\"high\" value=\"\">\r\n\t\t\t\t\t\t<label for=\"idPrompt_specifications_output_gain_nomore\">No More Than</label>\r\n\t\t\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\r\n\t\t\t\t<div class=\"units\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<label>Unit:</label>dB \r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t\r\n\r\n\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t\r\n\t\t<span class=\"buttons\">\r\n\t\t\t<span class=\"button-mask\"><input class=\"close-edit-facet\" type=\"button\" value=\"Cancel\"></span>\r\n\t\t\t<span class=\"button-mask last\"><input class=\"update-facet\" type=\"button\" value=\"Update Results\"></span>\r\n\t\t</span>\r\n\t\r\n\t\t</div>\r\n\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t<div class=\"search-facet-group\" style=\"\">\r\n\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"edit-facet-link\" data-facettoedit=\"idPrompt_specifications_power\">\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\tPower \r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t</a>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t<div class=\"search-facets\" id=\"search-facet-group-4\">\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" onclick=\"search_addSpecFacet('range_idPrompt_specifications_power_1', 0, 'Add:Power: Less than 1 watts', this); return false;\">Less than 1 watts</a>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" onclick=\"search_addSpecFacet('range_idPrompt_specifications_power_2', 0, 'Add:Power: 1 - 5 watts', this); return false;\">1 - 5 watts</a>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" onclick=\"search_addSpecFacet('range_idPrompt_specifications_power_3', 0, 'Add:Power: 5 - 30 watts', this); return false;\">5 - 30 watts</a>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet show-on-phone\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"responsive-edit-facet-link custom-range\" data-facettoedit=\"idPrompt_specifications_power\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tEnter a Range\r\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t<div class=\"edit-numeric-container\" id=\"edit-idPrompt_specifications_power\" data-facet=\"Power:\"\r\n\t\t\tdata-low=\"\" data-high=\"\">\r\n\r\n\t\t\t<div class=\"notch\"></div>\r\n\r\n\t\t\t\r\n\t\t\t<a onclick=\"return search_handleHelpLink(this, true);\" alt=\"Help\" href=\"/help/spechelpfilter2?comp=2940#idPrompt_specifications_power\">\r\n\t\t\t\t<span class=\"help-button\"></span>\r\n\t\t\t</a>\r\n\t\t\r\n\r\n\t\t\t<div class=\"label\">Select a range for Power:</div>\r\n\r\n\t\t\t<div class=\"options\">\r\n\t\t\t\t\r\n\t\t\t\t\t<div class=\"at-least\">\r\n\t\t\t\t\t\t<input type=\"text\" name=\"idPrompt_specifications_power_atleast\" class=\"low\" value=\"\">\r\n\t\t\t\t\t\t<label for=\"idPrompt_specifications_power_atleast\">At least</label>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t\t<div class=\"to\">to</div>\r\n\t\t\t\t\r\n\t\t\t\t\t<div class=\"no-more-than\">\r\n\t\t\t\t\t\t<input type=\"text\" name=\"idPrompt_specifications_power_nomore\" class=\"high\" value=\"\">\r\n\t\t\t\t\t\t<label for=\"idPrompt_specifications_power_nomore\">No More Than</label>\r\n\t\t\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\r\n\t\t\t\t<div class=\"units\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<select name=\"idUnitSel_specifications_power\" id=\"unit-selector\">\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t<option name=\"UnitsPowerHP\" value=\"UnitsPowerHP\"  >\r\n\t\t\t\t\t\t\t\t\tHP\r\n\t\t\t\t\t\t\t\t</option>\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t<option name=\"UnitsPowerWatts\" value=\"UnitsPowerWatts\"  id=\"original\" selected >\r\n\t\t\t\t\t\t\t\t\twatts\r\n\t\t\t\t\t\t\t\t</option>\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t<option name=\"UnitsPowerMegaWatts\" value=\"UnitsPowerMegaWatts\"  >\r\n\t\t\t\t\t\t\t\t\tmegawatts\r\n\t\t\t\t\t\t\t\t</option>\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t<option name=\"UnitsPowerKWatts\" value=\"UnitsPowerKWatts\"  >\r\n\t\t\t\t\t\t\t\t\tkwatts\r\n\t\t\t\t\t\t\t\t</option>\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t<option name=\"UnitsPowermilliwatts\" value=\"UnitsPowermilliwatts\"  >\r\n\t\t\t\t\t\t\t\t\tmilliwatts\r\n\t\t\t\t\t\t\t\t</option>\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t<option name=\"UnitsPowermicrowatts\" value=\"UnitsPowermicrowatts\"  >\r\n\t\t\t\t\t\t\t\t\tmicrowatts\r\n\t\t\t\t\t\t\t\t</option>\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t<option name=\"UnitsPowernanowatts\" value=\"UnitsPowernanowatts\"  >\r\n\t\t\t\t\t\t\t\t\tnanowatts\r\n\t\t\t\t\t\t\t\t</option>\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t<option name=\"UnitsPowerpicowatts\" value=\"UnitsPowerpicowatts\"  >\r\n\t\t\t\t\t\t\t\t\tpicowatts\r\n\t\t\t\t\t\t\t\t</option>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t<label for=\"idUnitSel_specifications_power\">Unit</label>\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t\r\n\r\n\t\t\t\t<div class=\"clear\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t\r\n\t\t<span class=\"buttons\">\r\n\t\t\t<span class=\"button-mask\"><input class=\"close-edit-facet\" type=\"button\" value=\"Cancel\"></span>\r\n\t\t\t<span class=\"button-mask last\"><input class=\"update-facet\" type=\"button\" value=\"Update Results\"></span>\r\n\t\t</span>\r\n\t\r\n\t\t</div>\r\n\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t<div class=\"search-facet-group\" style=\"\">\r\n\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"edit-facet-link\" data-facettoedit=\"cb_companyType\">\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\tCompany Type \r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t</a>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t<div class=\"search-facets\" id=\"search-facet-group-5\">\r\n\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" onclick=\"search_addSpecFacet('idPrompt_ct_manufacturer', 0, 'Add:Company Type: Manufacturer', this); return false;\">Manufacturer</a>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-facet spec-facet show-on-phone\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"responsive-edit-facet-link \" data-facettoedit=\"cb_companyType\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"search-facet-group-label\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tSelect Multiple\r\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t<div class=\"edit-facet-container\" id=\"edit-cb_companyType\" data-facet=\"Company Type\"\r\n\t\t\t\r\n\t\t\t\tdata-option1=false >\r\n\t\t\t<div class=\"notch\"></div>\r\n\t\t\t\r\n\t\t\t<div class=\"label\">Select one or more Company Type criteria:</div>\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t\t<div class=\"options\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"chkbox-option\">\r\n\t\t\t\t\t\t\t<label><input type=\"checkbox\" name=\"idPrompt_ct_manufacturer\" id=\"option1\" value=\"1\"\r\n\t\t\t\t\t\t\t\t/>\r\n\t\t\t\t\t\t\tManufacturer\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\t\t<span class=\"buttons\">\r\n\t\t\t<span class=\"button-mask\"><input class=\"close-edit-facet\" type=\"button\" value=\"Cancel\"></span>\r\n\t\t\t<span class=\"button-mask last\"><input class=\"update-facet\" type=\"button\" value=\"Update Results\"></span>\r\n\t\t</span>\r\n\t\r\n\t\t</div>\r\n\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\t\t\t</div>\r\n\t\t\r\n\t\t\t</form>\r\n\t\t\r\n</div>\r\n\r\n\r\n\r\n\t<div id=\"more-information\" class=\"bricklet\">\r\n\t\t<div class=\"bricklet-title\">More Information</div>\r\n\t\t<div class=\"bricklet-content-container\">\r\n\t\t\t<b>\r\n\t\t\t\t\r\n\t\t\t\t<span class=\"alert-signup-link\">\r\n\t\t\t\t\r\n\r\n<div id=\"alert-signup-overlay\" class=\"alertModal\" style=\"display:none;\">\r\n\t<div id=\"banner\" class=\"matching-suppliers-spritesheet\">&nbsp;</div>\r\n\r\n \t<form name=\"signup\" action=\"\" method=\"post\">\r\n\t\t<input type=\"hidden\" name=\"alertIds\" value=\"30\">\r\n\t\t<input type=\"hidden\" name=\"frmtrk\" value=\"searchform\">\r\n\t \t<div class=\"alertContent\">\r\n\t\t\t<div class=\"alertTitle\">\r\n\t\t\t\t<span class=\"largeBoldContent\">About:</span> <span style=\"font-weight:bold;font-style: italic;font-size:18px;color:#0033CC;\">Acoustic and Audio Equipment</span>\r\n\t\t\t</div>\r\n\t\t\t<p>Keep current on the latest product, supplier and technical information of interest to you with weekly e-mail updates from GlobalSpec.</p>\r\n\t\t\t<p class=\"sendAlert\">Send Alerts to my e-mail address:</p>\r\n\t\t\t<div class=\"input\">\r\n\t\t\t\t<input name=\"email\" type=\"text\" id=\"email\" value=\"\"/>\r\n\t\t\t\t<a id=\"alertSubmit\" href=\"javascript:void(0);\" onclick=\"submitSignup(); return false;\">\r\n\t\t\t\t\t<div id=\"submit-button\">Submit</div>\r\n\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"additional\">\r\n\t\t\t\t<a id=\"seeAllAlerts\" href=\"/subscriptions/alertSignup\">Click here to see all Alert categories</a>\r\n\t\t\t\t<div class=\"closeAlert\">\r\n\t\t\t\t\t<a id=\"alertSubmit\" href=\"javascript:void(0);\" onclick=\"closeAlertPopup();\">\r\n\t\t\t\t\t\t<div id=\"close-button\">Close this window</div>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<a href=\"/help/privacy\" id=\"privacy-button\">Privacy Policy</a>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</form>\r\n\r\n</div>\r\n\r\n\r\n\r\n<Script language=\"javascript\">\r\n\t$j(function(){\r\n\t\t$j('.alertModal').dialog({\r\n\t\t\tautoOpen:false,\r\n\t\t\tmodal:true,\r\n\t\t\twidth:400,\r\n\t\t\theight:500,\r\n\t\t\tdraggable:false,\r\n\t\t\tresizable:false\r\n\t\t});\r\n\t\t$j('.modalDialog').css('overflow','visible');\r\n\t\t$j('.alertModal').siblings(\".ui-dialog-titlebar\").remove();\r\n\t});\r\nvar IFrameObj; // our IFrame object to hold the page that will hold the DB user info\r\n\r\nfunction submitSignup() {\r\n\t//validate email\r\n\tvar email = trim(document.signup.email.value);\r\n\tvar msg = \"\";\r\n\tif (email == \"\") {\r\n\t\tmsg = \"E-mail address cannot be blank.\";\r\n\t} else if (email.indexOf ('@') == -1) {\r\n\t\tmsg = \"E-mail address must contain the @ character.\";\r\n\t} else if (email.indexOf ('@') == 0) {\r\n\t\tmsg = \"@ cannot be the first character in the e-mail address.\";\r\n\t} else if (email.indexOf ('@') == email.length - 1) {\r\n\t\tmsg = \"@ cannot be the last character in the e-mail address.\";\r\n\t} else if (email.indexOf ('.') == -1) {\r\n\t\tmsg = \"E-mail address must contain a period.\";\r\n\t} else if (email.indexOf ('.') == 0) {\r\n\t\tmsg = \"A period cannot be the first character in the e-mail address.\";\r\n\t} else if (email.indexOf ('.') == email.length - 1) {\r\n\t\tmsg = \"A period cannot be the last character in the e-mail address.\";\r\n\t} else if ((email.indexOf ('.') == email.indexOf ('@') + 1) || (email.indexOf ('@') == email.indexOf ('.') + 1)) {\r\n\t\tmsg = \"The period and @ character must have something between them in the e-mail address.\";\r\n\t} else if (email.indexOf (' ') > -1) {\r\n\t\tmsg = \"E-mail address cannot contain spaces.\";\r\n\t}\r\n\tif (msg != \"\") {\r\n\t\talert (msg);\r\n\t\treturn false;\r\n\t}\r\n\r\n\tvar IFrameDoc;\r\n\r\n\tvar URL = '/alerts/alertPopup_a?email=' + encodeURIComponent(document.signup.email.value) \r\n\t\t\t\t\t+ '&alertIds=' + document.signup.alertIds.value \r\n\t\t\t\t\t+ '&frmtrk=' + encodeURIComponent(document.signup.frmtrk.value);\r\n\r\n\tif (!IFrameObj && document.createElement) {\r\n\t\t// create the IFrame and assign a reference to the\r\n\t\t// object to our global variable IFrameObj.\r\n\t\t// this will only happen the first time\r\n\t\t// callToServer() is called\r\n\t\t\tvar tempIFrame=document.createElement('iframe');\r\n\t\t\ttempIFrame.setAttribute('id','alertSignup');\r\n\t\t\ttempIFrame.style.border='0px';\r\n\t\t\ttempIFrame.style.width='0px';\r\n\t\t\ttempIFrame.style.height='0px';\r\n\t\t\tIFrameObj = document.body.appendChild(tempIFrame);\r\n\t}\r\n\r\n\tif (IFrameObj.contentWindow) {\r\n\t\t// For IE5.5 and IE6\r\n\t\tIFrameDoc = IFrameObj.contentWindow.document;\r\n\t} else if (IFrameObj.document) {\r\n\t\t// For IE5\r\n\t\tIFrameDoc = IFrameObj.document;\r\n\t} else {\r\n\t\treturn true;\r\n\t}\r\n\r\n\tIFrameDoc.location.replace(URL);\r\n\r\n\tcloseAlertPopup();\r\n\treturn false;\r\n}\r\n\r\nfunction closeAlertPopup() {\r\n\tdocument.getElementById(\"alert-signup-overlay\").style.left = \"0px\";\r\n\tcloseModalDialog();\r\n}\r\n\r\n// Removes leading whitespaces\r\nfunction LTrim( value ) {\r\n\r\n\tvar re = /\\s*((\\S+\\s*)*)/;\r\n\treturn value.replace(re, \"$1\");\r\n\r\n}\r\n\r\n// Removes ending whitespaces\r\nfunction RTrim( value ) {\r\n\r\n\tvar re = /((\\s*\\S+)*)\\s*/;\r\n\treturn value.replace(re, \"$1\");\r\n\r\n}\r\n\r\n// Removes leading and ending whitespaces\r\nfunction trim( value ) {\r\n\r\n\treturn LTrim(RTrim(value));\r\n\r\n}\r\n\r\n\r\n</SCRIPT>\r\n\r\n\t<a href=\"javascript:void(0);\" onclick=\"showAsModalDialog('alert-signup-overlay');\"class=\"contentLinksNoUnderlineNoColorChange\">Sign up for Product Alerts related to Audio Amplifiers and Preamplifiers</a>\r\n\r\n\t\t\t\t</span>\r\n\t\t\t\t<br><br>\r\n\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t<span class=\"learn-more-link\">\r\n\t\t\t\t\t<a href=\"/learnmore/sensors_transducers_detectors/acoustic_audio_equipment/audio_amplifiers_preamplifiers\">\r\n\t\t\t\t\t\tLearn More About Audio Amplifiers and Preamplifiers\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t</span>\r\n\t\t\t\t\r\n\t\t\t</b>\r\n\t\t</div>\r\n\t</div>\r\n",
+    "PARAMETERS": {
+        "AREA": {},
+        "COMP": 2940,
+        "FORMAT": "",
+        "PAGESIZE": 25,
+        "PAGETYPE": "mi",
+        "PARTID": "",
+        "PG": 2,
+        "QID": 0,
+        "QUERY": "",
+        "SEARCHFORM": {
+            "AVAILABLEPROMPTS": [
+                {
+                    "DISPLAYDROPDOWN": false,
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": [
+                            [
+                                "idPrompt_type_amplifier",
+                                "Amplifier",
+                                46
+                            ],
+                            [
+                                "idPrompt_type_preamplifier",
+                                "Preamplifier",
+                                2
+                            ]
+                        ]
+                    },
+                    "HASSELECTEDOPTION": false,
+                    "HELPLINK": "cb_Type",
+                    "NOTE": "",
+                    "OPTIONS": [
+                        {
+                            "HELPLINK": "idPrompt_type_amplifier",
+                            "NOTE": "",
+                            "OPTIONID": "idPrompt_type_amplifier",
+                            "OPTIONTEXT": "Amplifier",
+                            "SELECTED": false
+                        },
+                        {
+                            "HELPLINK": "idPrompt_type_preamplifier",
+                            "NOTE": "",
+                            "OPTIONID": "idPrompt_type_preamplifier",
+                            "OPTIONTEXT": "Preamplifier",
+                            "SELECTED": false
+                        }
+                    ],
+                    "PROMPTID": "cb_Type",
+                    "PROMPTTEXT": "Type:",
+                    "PROMPTTEXTDISPLAY": "Type ",
+                    "PROMPTTYPE": "Checkbox"
+                },
+                {
+                    "DISPLAYDROPDOWN": false,
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": [
+                            [
+                                "idPrompt_amplifier_class_class_d",
+                                "Class D",
+                                24
+                            ]
+                        ]
+                    },
+                    "HASSELECTEDOPTION": false,
+                    "HELPLINK": "cb_Amplifier_Class",
+                    "NOTE": "",
+                    "OPTIONS": [
+                        {
+                            "HELPLINK": "idPrompt_amplifier_class_class_d",
+                            "NOTE": "",
+                            "OPTIONID": "idPrompt_amplifier_class_class_d",
+                            "OPTIONTEXT": "Class D",
+                            "SELECTED": false
+                        }
+                    ],
+                    "PROMPTID": "cb_Amplifier_Class",
+                    "PROMPTTEXT": "Amplifier Class:",
+                    "PROMPTTEXTDISPLAY": "Amplifier Class ",
+                    "PROMPTTYPE": "Checkbox"
+                },
+                {
+                    "ATLEASTLABEL": "At least",
+                    "ATLEASTVALUE": "",
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": [
+                            [
+                                "range_idPrompt_specifications_output_gain_1",
+                                "28 - 35 dB",
+                                7
+                            ],
+                            [
+                                "range_idPrompt_specifications_output_gain_2",
+                                "35 dB and up",
+                                4
+                            ]
+                        ]
+                    },
+                    "FIXEDUNIT": "dB",
+                    "HELPLINK": "idPrompt_specifications_output_gain",
+                    "NOMORELABEL": "No more than",
+                    "NOMOREVALUE": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_specifications_output_gain",
+                    "PROMPTTEXT": "Output Gain:",
+                    "PROMPTTEXTDISPLAY": "Output Gain ",
+                    "PROMPTTYPE": "AtLeastNoMoreThan",
+                    "UNIT": "",
+                    "UNITSELECTORID": ""
+                },
+                {
+                    "ATLEASTLABEL": "At least",
+                    "ATLEASTVALUE": "",
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": [
+                            [
+                                "range_idPrompt_specifications_power_1",
+                                "Less than 1 watts",
+                                19
+                            ],
+                            [
+                                "range_idPrompt_specifications_power_2",
+                                "1 - 5 watts",
+                                15
+                            ],
+                            [
+                                "range_idPrompt_specifications_power_3",
+                                "5 - 30 watts",
+                                15
+                            ]
+                        ]
+                    },
+                    "FIXEDUNIT": "",
+                    "HELPLINK": "idPrompt_specifications_power",
+                    "NOMORELABEL": "No more than",
+                    "NOMOREVALUE": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_specifications_power",
+                    "PROMPTTEXT": "Power:",
+                    "PROMPTTEXTDISPLAY": "Power ",
+                    "PROMPTTYPE": "AtLeastNoMoreThan",
+                    "UNIT": "UnitsPowerWatts",
+                    "UNITSELECTORID": "idUnitSel_specifications_power"
+                },
+                {
+                    "DISPLAYDROPDOWN": false,
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": [
+                            [
+                                "idPrompt_ct_manufacturer",
+                                "Manufacturer",
+                                -1
+                            ]
+                        ]
+                    },
+                    "HASSELECTEDOPTION": false,
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "OPTIONS": [
+                        {
+                            "HELPLINK": "",
+                            "NOTE": "",
+                            "OPTIONID": "idPrompt_ct_manufacturer",
+                            "OPTIONTEXT": "Manufacturer",
+                            "SELECTED": false
+                        }
+                    ],
+                    "PROMPTID": "cb_companyType",
+                    "PROMPTTEXT": "Company Type:",
+                    "PROMPTTEXTDISPLAY": "Company Type ",
+                    "PROMPTTYPE": "Checkbox"
+                }
+            ],
+            "AVAILABLETEXTSEARCHPROMPTS": [
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_1",
+                    "PROMPTTEXT": "Text search 1:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                },
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_2",
+                    "PROMPTTEXT": "Text search 2:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                },
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_3",
+                    "PROMPTTEXT": "Text search 3:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                },
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_4",
+                    "PROMPTTEXT": "Text search 4:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                },
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_5",
+                    "PROMPTTEXT": "Text search 5:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                },
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_6",
+                    "PROMPTTEXT": "Text search 6:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                },
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_7",
+                    "PROMPTTEXT": "Text search 7:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                },
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_8",
+                    "PROMPTTEXT": "Text search 8:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                },
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_9",
+                    "PROMPTTEXT": "Text search 9:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                },
+                {
+                    "FACETS": {
+                        "COLUMNS": [
+                            "FACETID",
+                            "DISPLAYTEXT",
+                            "NUMMATCHES"
+                        ],
+                        "DATA": []
+                    },
+                    "HELPLINK": "",
+                    "NOTE": "",
+                    "PROMPTID": "idPrompt_textSearch_10",
+                    "PROMPTTEXT": "Text search 10:",
+                    "PROMPTTYPE": "Text",
+                    "TEXTSEARCHVALUE": ""
+                }
+            ],
+            "NUMPRODUCTAREASTOSHOW": 0,
+            "NUMSERVICEAREASTOSHOW": 0,
+            "SPECIFIEDAREAID": 2940,
+            "SPECIFIEDPROMPTS": [],
+            "SPECIFIEDSUPPLIERID": "",
+            "SPECIFIEDTEXTSEARCHPROMPTS": [],
+            "SUGGESTEDAREAFACETS": {
+                "COLUMNS": [
+                    "AREAID",
+                    "AREANAME",
+                    "NUMMATCHES",
+                    "BESTBET",
+                    "SERVICEAREA"
+                ],
+                "DATA": [
+                    [
+                        "2940",
+                        "Audio Amplifiers and Preamplifiers",
+                        48,
+                        false,
+                        false
+                    ]
+                ]
+            },
+            "SUGGESTEDSUPPLIERFACETS": {
+                "COLUMNS": [
+                    "SUPPLIERID",
+                    "SUPPLIERNAME",
+                    "NUMMATCHES"
+                ],
+                "DATA": [
+                    [
+                        "98259",
+                        "ROHM Semiconductor USA, LLC",
+                        48
+                    ]
+                ]
+            },
+            "UNITSELECTORS": {
+                "IDUNITSEL_SPECIFICATIONS_POWER": [
+                    {
+                        "SELECTED": false,
+                        "UNITID": "UnitsPowerHP",
+                        "UNITLABEL": "HP"
+                    },
+                    {
+                        "SELECTED": true,
+                        "UNITID": "UnitsPowerWatts",
+                        "UNITLABEL": "watts"
+                    },
+                    {
+                        "SELECTED": false,
+                        "UNITID": "UnitsPowerMegaWatts",
+                        "UNITLABEL": "megawatts"
+                    },
+                    {
+                        "SELECTED": false,
+                        "UNITID": "UnitsPowerKWatts",
+                        "UNITLABEL": "kwatts"
+                    },
+                    {
+                        "SELECTED": false,
+                        "UNITID": "UnitsPowermilliwatts",
+                        "UNITLABEL": "milliwatts"
+                    },
+                    {
+                        "SELECTED": false,
+                        "UNITID": "UnitsPowermicrowatts",
+                        "UNITLABEL": "microwatts"
+                    },
+                    {
+                        "SELECTED": false,
+                        "UNITID": "UnitsPowernanowatts",
+                        "UNITLABEL": "nanowatts"
+                    },
+                    {
+                        "SELECTED": false,
+                        "UNITID": "UnitsPowerpicowatts",
+                        "UNITLABEL": "picowatts"
+                    }
+                ]
+            }
+        },
+        "SHOW": "products",
+        "SHOWALL": 0,
+        "SORTBY": 0,
+        "SPECFACETS": "",
+        "SQID": 19075256,
+        "VID": 98259,
+        "origWebHitId": 0,
+        "privateUrl": "/cfm/search/search.cfc",
+        "responsive": "",
+        "webHitId": 475663062
+    },
+    "QUERY": "",
+    "RECOMMENDATIONS": "",
+    "RESULTS": "\r\n\t\t<div id=\"supplier-navigation\" class=\"no-print\">\r\n\t\t\t<div id=\"title-bar\">\r\n\t\t\t\t<h3>Supplier Profile</h3>\r\n\t\t\t</div>\r\n\t\t\t<div id=\"nav\">\r\n\t\t\t\t\r\n\t\t\t\t<span class=\"nav-column\">\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"/supplier/profile/ROHMSemiconductorUSA?sqid=19075256\">Profile Home</a></div>\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"http://www.globalspec.com/supplier/about/ROHMSemiconductorUSA?sqid=19075256\">About</a></div>\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"http://www.globalspec.com/supplier/Distributors/ROHMSemiconductorUSA?sqid=19075256\">Distributors</a></div>\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"http://www.globalspec.com/supplier/Locations/ROHMSemiconductorUSA?sqid=19075256\">Locations</a></div>\r\n\t\t\t\t\r\n\t\t\t\t</span><span class=\"nav-column\">\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"http://www.globalspec.com/supplier/videos/ROHMSemiconductorUSA?sqid=19075256\">Videos</a></div>\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"http://www.globalspec.com/supplier/TechArticles/ROHMSemiconductorUSA?sqid=19075256\">Technical Articles</a></div>\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"http://www.globalspec.com/supplier/ProductAnnouncements/ROHMSemiconductorUSA?sqid=19075256\">Product Announcements</a></div>\r\n\t\t\t\t\r\n\t\t\t\t</span><span class=\"nav-column last\">\r\n\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"http://www.globalspec.com/supplier/News/ROHMSemiconductorUSA?sqid=19075256\">News</a></div>\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"http://www.globalspec.com/supplier/contact/ROHMSemiconductorUSA?sqid=19075256\">Request Information</a></div>\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"nav-item\"><a href=\"http://www.globalspec.com/supplier/Catalog/ROHMSemiconductorUSA?sqid=19075256\">Product Catalog</a></div>\r\n\t\t\t\t\r\n\t\t\t\t</span>\r\n\t\t\t\r\n\t\t\t</div>\r\n\t\t\t<span id=\"nav-arrow\"></span>\r\n\t\t</div>\r\n\t\r\n\r\n<div class=\"back-button-container\">\r\n\t\r\n\t\t<a href=\"javascript:void(0);\" onClick=\"search_removeSupplierFacet(98259); return false;\">\r\n\t\t\t<span class=\"button back-button\">\r\n\t\t\t\t&#171; More Suppliers\r\n\t\t\t</span>\r\n\t\t</a>\r\n\t\r\n</div>\r\n<div class=\"clear\"></div>\r\n\r\n\r\n\t<div id=\"\" class=\"page-title-container\">\r\n\t\t\r\n\t\t\t<h2 class=\"page-title\">Audio Amplifiers and Preamplifiers</h2>\r\n\t\t\t\r\n\t\t\t\t<span class=\"header-label\">from:</span> <h1 class=\"post-header\">ROHM Semiconductor USA, LLC</h1><br>\r\n\t\t\t\r\n\t\t\t<h1 class=\"post-header sub-title\">Catalog of 48 products</h1>\r\n\t\t\r\n\t</div>\r\n\r\n\r\n<div class=\"display-format\">\r\n\t<div id=\"listing-table-navigation-count\">\r\n\t\t\r\n\t</div>\r\n\t<div id=\"listing-table-format\" class=\"left\">\r\n\r\n\t\t\r\n\r\n<span class=\"view-select\">\r\n\tView as:\r\n\t\r\n\t\t\t<a href=\"javascript:void(0);\"><span class=\"list-view format-toggle selected\" data-format=\"list\"></span></a>\r\n\t\t\r\n\t\t\t<a href=\"javascript:void(0);\"><span class=\"table-view format-toggle \" data-format=\"table\"></span></a>\r\n\t\t\r\n</span> \r\n\t</div>\r\n\t<div id=\"listing-table-navigation-paging\" class=\"right  last\">\r\n\t\t\r\n\r\n\t\t<div id=\"paging-wrapper\">\r\n\t\t\t<a href=\"javascript:void(0);\" id=\"first-page\" title=\"First Page\"\r\n\t\t\t\tdata-pg=\"0\" data-clickMapId=\"paging:top:first\"\r\n\t\t\t></a>\r\n\t\t\t<a href=\"javascript:void(0);\" id=\"previous-page\" title=\"Previous Page\"\r\n\t\t\t\tdata-pg=\"1\" data-clickMapId=\"paging:top:previous\"\r\n\t\t\t>\r\n\t\t\t\t<span class=\"show-on-phone\">&lt;</span>\r\n\t\t\t</a>\r\n\t\t\t\r\n\t\t\t\t<a class=\"search-page\" title=\"Page 1 of 2\" data-pg=\"0\" data-clickMapId=\"paging:top:1\" href=\"javascript:void(0)\">1</a>\r\n\t\t\t\r\n\t\t\t\t<a class=\"search-page\" title=\"Page 2 of 2\" data-pg=\"1\" data-clickMapId=\"paging:top:2\" href=\"javascript:void(0)\">2</a>\r\n\t\t\t\r\n\r\n\t\t\t<a href=\"javascript:void(0);\" id=\"next-page\" title=\"Next Page\"\r\n\t\t\t\tdata-pg=\"3\" data-clickMapId=\"paging:top:next\"\r\n\t\t\t>\r\n\t\t\t\t<span class=\"show-on-phone\">&gt;</span>\r\n\t\t\t</a>\r\n\t\t\t<a href=\"javascript:void(0);\" id=\"last-page\" title=\"Last Page (2)\"\r\n\t\t\t\tdata-pg=\"1\" data-clickMapId=\"paging:top:last\"\r\n\t\t\t></a>\r\n\t\t</div>\r\n\t\t\r\n\t</div>\r\n\r\n\t<div class=\"clear\"></div>\r\n\r\n\t\r\n\t\r\n\t\t<div id=\"matching-items-options\">\r\n\t\t\t<span class=\"compare-button\">\r\n\t\t\t\t<input type=\"button\" value=\"Compare Products\" onclick=\"$j('#matching-items-form').submit();\"></input>\r\n\t\t\t\t<span class=\"notch\"></span>\r\n\t\t\t</span>\r\n\t\t</div>\r\n\t\r\n\r\n\r\n</div> \r\n<style>\r\n\t#no-result-page .sorry { text-align: center; }\r\n\t#no-result-page .sorry h2 { color: #f26722; font-family: \"Times New Roman\"; font-size: 60px; font-style: italic; font-weight: bold; margin-bottom: 10px; }\r\n\t#no-result-page .sorry h1 { color: black; font-family: \"Arial\"; font-size: 24px; font-weight: bold; line-height: 1.5; }\r\n\r\n\t#no-result-page .no-result-section { border-color: silver; border-style: solid; border-width: 1px 0; margin-bottom: 210px; padding: 20px 40px; }\r\n\t#no-result-page .no-result-section h3 { color: #f26722; font-family: \"Arial\"; font-weight: bold; margin-bottom: 15px; }\r\n\t#no-result-page .no-result-section ul { font-size: 14px; font-weight: bold; line-height: 21px; margin: 0; }\r\n</style>\r\n\r\n\r\n\r\n\t<style>\r\n\t\t.span-30.last { width: 100%; }\r\n\t\t#section-header.span-30, #page-header.span-30,\r\n\t\t#navigation.span-10, #secondary-content.span-7 { display: none; }\r\n\t\t#main-content.span-23 { margin: 10px 185px 0; width: 570px; }\r\n\t\t#no-result-page .no-result-section #no-result-searchbox { width: 250px; }\r\n\t</style>\r\n\r\n\r\n<div id=\"no-result-page\" class=\"search-main-content\">\r\n\t\r\n\t\t<div class=\"sorry\">\r\n\t\t\t<h2>Sorry!</h2>\r\n\t\t\t<h1>\r\n\t\t\t\tNo Products & Services Results found\r\n\t\t\t\t\r\n\t\t\t</h1>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"no-result-section\">\r\n\t\t\t\r\n\t\t\t\t<h3>Improve Your Search</h3>\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li>\r\n\t\t\t\t\t\tType slowly to see suggested matches\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t\r\n\t\t\t\t\t<li>\r\n\t\t\t\t\t\tUse fewer keywords\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li>\r\n\t\t\t\t\t\tUse more general keywords\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t\r\n</div> \r\n\r\n\t\t<div id=\"paging-wrapper\">\r\n\t\t\t<a href=\"javascript:void(0);\" id=\"first-page\" title=\"First Page\"\r\n\t\t\t\tdata-pg=\"0\" data-clickMapId=\"paging:bottom:first\"\r\n\t\t\t></a>\r\n\t\t\t<a href=\"javascript:void(0);\" id=\"previous-page\" title=\"Previous Page\"\r\n\t\t\t\tdata-pg=\"1\" data-clickMapId=\"paging:bottom:previous\"\r\n\t\t\t>\r\n\t\t\t\t<span class=\"show-on-phone\">&lt;</span>\r\n\t\t\t</a>\r\n\t\t\t\r\n\t\t\t\t<a class=\"search-page\" title=\"Page 1 of 2\" data-pg=\"0\" data-clickMapId=\"paging:bottom:1\" href=\"javascript:void(0)\">1</a>\r\n\t\t\t\r\n\t\t\t\t<a class=\"search-page\" title=\"Page 2 of 2\" data-pg=\"1\" data-clickMapId=\"paging:bottom:2\" href=\"javascript:void(0)\">2</a>\r\n\t\t\t\r\n\r\n\t\t\t<a href=\"javascript:void(0);\" id=\"next-page\" title=\"Next Page\"\r\n\t\t\t\tdata-pg=\"3\" data-clickMapId=\"paging:bottom:next\"\r\n\t\t\t>\r\n\t\t\t\t<span class=\"show-on-phone\">&gt;</span>\r\n\t\t\t</a>\r\n\t\t\t<a href=\"javascript:void(0);\" id=\"last-page\" title=\"Last Page (2)\"\r\n\t\t\t\tdata-pg=\"1\" data-clickMapId=\"paging:bottom:last\"\r\n\t\t\t></a>\r\n\t\t</div>\r\n\t\t\n\t\t\t<script type=\"text/javascript\">var s_account=\"globspecprod15\"</script>\n\t\t\t\n\n\t\t\n\t\t<!-- SiteCatalyst code version: H.25.4.\n\t\tCopyright 1996-2012 Adobe, Inc. All Rights Reserved\n\t\tMore info available at http://www.omniture.com -->\n\t\t<script src=\"http://www.globalspec.com/js/omniture/s_code.js\" type=\"text/javascript\"></script>\r\n\t\t<script language=\"JavaScript\" type=\"text/javascript\"><!--\n\t\t\n\t\t\ts.zip=\"\";\n\t\t\ts.state=\"\";\n\t\t\ts.prop47=\"Client\";\n\t\t\ts.server=\"AN\\x2D2PGLSWB01\";\n\t\t\ts.campaign=\"\";\n\t\t\ts.prop2=\"2940\";\n\t\t\ts.prop1=\"\";\n\t\t\ts.eVar2=\"\";\n\t\t\ts.eVar3=\"\";\n\t\t\ts.pageType=\"\";\n\t\t\ts.eVar4=\"\";\n\t\t\ts.eVar30=\"D\\x3Dc14\";\n\t\t\ts.eVar5=\"\";\n\t\t\ts.prop12=\"\";\n\t\t\ts.prop13=\"\";\n\t\t\ts.prop14=\"\\x2FSearch\\x2FGetSupplierResults\\x3Fsqid\\x3D19075256\\x26comp\\x3D2940\\x26show\\x3Dproducts\\x26origWebHitId\\x3D0\\x26vid\\x3D98259\\x26method\\x3DgetNewResults\\x26pg\\x3D2\";\n\t\t\ts.prop10=\"0\";\n\t\t\ts.prop11=\"\";\n\t\t\ts.pageName=\"\\x2Fsearch\\x2Fsearch.cfc\";\n\t\t\ts.channel=\"globalspec\";\n\t\t\ts.products=\"\";\n\t\t\ts.purchaseID=\"\";\n\t\t\ts.prop9=\"NO\";\n\t\t\ts.eVar1=\"\";\n\t\t\ts.eVar47=\"Client\";\n\t\t\ts.prop3=\"98259\";\n\n\t\t\tif((typeof s.events !== \"undefined\") && (s.events)){\n\t\t\t\ts.events += \",\";\n\t\t\t} else {\n\t\t\t\ts.events = \"\";\n\t\t\t}\n\t\t\ts.events += \"event19\\x3A20161208475663062\";\n\t\t//--></script>\n\t\t\n\t\t<script language=\"JavaScript\" type=\"text/javascript\"><!--\n\t\t\n\t\t\ts.eVar27=\"Product3\"; \n\t\t\t//--></script>\n\t\t\t",
+    "SECONDARYCONTENT": "",
+    "SQID": 19075256,
+    "SUPPLIERTABS": "",
+    "TITLE": ""
+}
