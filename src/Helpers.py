@@ -22,10 +22,14 @@ class FetchQue:
     def add(self,item):
         if not any(d['url'] == item['url'] for d in self.qued):
             self.qued.append(item)
-            save_json_file(self.qued,self.que_file)
+            #save_json_file(self.qued,self.que_file)
 
     def save(self):
         save_json_file(self.qued,self.que_file)
+
+    def uniquify(self):
+        #TODO (better then this ugly add+save)
+        pass
         
             
     

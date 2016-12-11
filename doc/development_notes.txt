@@ -34,3 +34,35 @@ So we need to take the original url, extract the sqid and comp arguments
 fetch the page, extract WebHitId, and generate a request to the json url.
 
 Then we need to harvest that for more catalogs or products (it contains both)
+
+
+==============================================================
+
+
+1. http://www.globalspec.com/search/products?page=ms#sqid=19041002&comp=2940&show=products
+Audio Amplifiers and Preamplifiers
+
+Source of data is 
+http://www.globalspec.com/Search/GetProductResults?sqid=19041002&comp=2940&show=products&origWebHitId=475202962&method=getNewResults
+
+Links to 
+2. http://www.globalspec.com/search/products?page=mi#sqid=19041002&comp=2940&vid=335701
+Catalog of 16 products (4691830)
+Soure of data is 
+http://www.globalspec.com/Search/GetSupplierResults?sqid=19041002&comp=2940&vid=335701&origWebHitId=475234156&method=getNewResults
+
+Links to product with product ID
+---
+OK, initially, It looks like if the original url has a ?vid= it is a "leaf node" and only contains products
+Additinally, the source of the data is /Search/GetSupplierResults
+
+If there isn't a ?vid= in the URL it's a stem node, It could have both more catalogs and products,
+The source of the data is in /Search/GetProductResults?
+
+&pg= controls pagination, where &pg=0 is the first page
+
+if vendor id (vid) exists, it is a page of a vendor, we should already have it right? 
+Wrong! Only some of the vendors have a proper vendor page, this doesn't for example
+http://www.globalspec.com/supplier/profile/VisualSound (No "products catalog" here, but exists from within industrial directory structure)
+
+
