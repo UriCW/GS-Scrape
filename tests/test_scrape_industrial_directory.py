@@ -51,7 +51,7 @@ def queue_up_industrial_directory():
 
 
 
-def test_merge_files():
+def d_test_merge_files():
     letters=[chr(l) for l in range(ord('a'),ord('z')+1) ]
     letters.append("1")
     buff=[]
