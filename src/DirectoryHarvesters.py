@@ -2,6 +2,7 @@ import sys
 from bs4 import BeautifulSoup as bs
 from . import Helpers
 import json
+import re
 #from . import HarvestSupplierProfile
 #import HarvestSupplierProfile
 
@@ -38,6 +39,42 @@ class HarvestCatalog:
             print("Missing url arguments for catalog harvester")
             print("url : "+url)
             raise ex
+
+    def get_products(self,json):
+        #Gets the products from a category page or another catalog page
+        html=json["RESULTS"] #The contents are in the json element, inside some html tags
+        soup = bs(html,"html.parser")
+        ret=[]
+        for a in soup.findAll("a",attrs={"class":"product-name"}):
+            if "partspecs?" in a['href']: #A product
+                catalog_entry={
+                    'title':a.getText(),
+                    'uri':a['href'],
+                    'comp':a['href'].split("comp=")[1].split("&")[0],
+                    'vid':a['href'].split("vid=")[1].split("&")[0],
+                    'partId':a['href'].split("partId=")[1].split("&")[0],
+                    'harvested':False
+                }
+                ret.append(catalog_entry)
+        return ret
+
+    def get_catalogs(self,json):
+        #Gets the catalogs from a category page or another catalog page
+        html=json["RESULTS"] #The contents are in the json element, inside some html tags
+        soup = bs(html,"html.parser")
+        ret=[]
+        for a in soup.findAll("a",attrs={"class":"product-name"}):
+            if "search/products" in a['href']: #A catalog
+                catalog_entry={
+                    'title':a.getText(),
+                    'uri':a['href'],
+                    'comp':a['href'].split("comp=")[1].split("&")[0],
+                    'cat_id':a['href'].split("comp=")[1].split("&")[0],
+                    'vid':a['href'].split("vid=")[1].split("&")[0],
+                    'harvested':False
+                }
+                ret.append(catalog_entry)
+        return ret
 
 
     def get(self,json):
